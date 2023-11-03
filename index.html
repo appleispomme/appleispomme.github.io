@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+
+<style>
+    .main-logo {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: auto;
+        max-width: 100%;
+        z-index: 10;
+    }
+
+    /* Slide up logo */
+
+    .slide-up-logo {
+        height: auto;
+        overflow: hidden;
+    }
+
+    .slide-up-logo .inner {
+        animation: slide-up-logo 1s;
+        margin-top: 0%;
+    }
+
+    @keyframes slide-up-logo {
+        from {
+            margin-top: 25%;
+            opacity: 0;
+        }
+
+        to {
+            margin-top: 0%;
+            opacity: 1;
+        }
+    }
+
+    /* Slide left to right: head */
+
+    .slide-left-to-right-head {
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .slide-left-to-right-head .inner {
+        animation: slide-left-to-right-head 1.5s;
+    }
+
+    @keyframes slide-left-to-right-head {
+        from {
+            margin-left: -100%;
+            opacity: 0;
+        }
+
+        to {
+            margin-left: 0%;
+            opacity: 1;
+        }
+    }
+
+    /* Slide right to left: apple */
+
+    .slide-right-to-left-apple {
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .slide-right-to-left-apple .inner {
+        animation: slide-right-to-left-apple 1.5s;
+    }
+
+    @keyframes slide-right-to-left-apple {
+        from {
+            margin-left: 100%;
+            opacity: 0;
+        }
+
+        to {
+            margin-left: 0%;
+            opacity: 1;
+        }
+    }
+</style>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>All about Pomme</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Javascript for header -->
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            // $("#footer").load("footer.html");
+        }); 
+    </script>
+</head>
+
+<body>
+    <!-- Header -->
+    <div id="header"></div>
+    <!-- Main logo in center-->
+    <div class="slide-up-logo">
+        <img class="inner main-logo" src="images/main_index/center_logo.png">
+    </div>
+    <!-- Rest of the content -->
+
+    <div class="row">
+        <div class="col">
+            <div class="row">
+                <div class="slide-left-to-right-head">
+                    <img class="inner img-fluid" src="images/main_index/left_head.png">
+                </div>
+            </div>
+            <div class="row">
+                <img class="img-fluid align-self-start" src="images/main_index/left_naked.png">
+            </div>
+        </div>
+        <div class="col my-auto">
+            <div class="slide-right-to-left-apple">
+                <img class="inner img-fluid" src="images/main_index/right_apple.png">
+            </div>
+        </div>
+        <img class="row img-fluid " src="images/main_index/bottom_img.png">
+    </div>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
