@@ -12,7 +12,6 @@ This is a prototype for a static portfolio website.
 * Anti-flickering stuff
 * Spacing below title and between rows (a bit small for now, see "Light")
 * Animations on all titles
-* Rename pages
 * Navbar when small screen
 * Store fonts locally (faster?)
 
@@ -20,6 +19,9 @@ This is a prototype for a static portfolio website.
 
 * Check with honey specific setup + animation
 * Animations on scroll: https://alvarotrigo.com/blog/css-animations-scroll/
+* Animation naked women: start vertical twist left and get back in place
+* Apple should be more to the right (not merge in center)
+* header menu when shrinked
 
 ## About Pomme
 

@@ -14,19 +14,22 @@
 
 <div style="margin-bottom: 100px;">
 
-
     <nav class="navbar fixed-top navbar-expand-lg ">
-
         <div class="container-fluid">
             <!-- Logo -->
             <a class="navbar-brand" href="/index.html">
                 <img src="/images/logo_banner.png" alt="Logo" height="30" class="d-inline-block align-text-top">
             </a>
+            <!-- Buttons -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <!-- Menu -->
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="/about_pomme.html">About Pomme</a>
+                        <a class="nav-link" href="/about_pomme.html">About Pomme</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="/projects/index_projects.html"
@@ -34,15 +37,15 @@
                             aria-expanded="false">
                             Projects
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <div class="dropdown-menu">
                             <a class="dropdown-item" href="/projects/soje.html">Remember: Soje</a>
                             <a class="dropdown-item" href="/projects/light.html">Light</a>
                             <a class="dropdown-item" href="/projects/tea_break.html">Tea break</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="/career/index_career.html" id="navbarDropdownMenuLink"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="/career/index_career.html" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
                             Career
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -60,17 +63,16 @@
                             <a class="dropdown-item" href="/photography/portrait.html">Portrait</a>
                             <a class="dropdown-item" href="/photography/snap.html">Snap</a>
                         </div>
+                    </li>
                 </ul>
             </div>
         </div>
-        <!-- Buttons -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    </nav>
 </div>
-</nav>
-</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 
 
 </html>

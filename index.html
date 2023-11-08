@@ -77,9 +77,31 @@
         }
 
         to {
-            margin-left: 0%;
+            margin-left: 40%;
             opacity: 1;
         }
+    }
+
+    /* Flicker: naked woman */
+
+    .flicker-naked {
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .flicker-naked .inner {
+        animation: flicker-naked 1.5s;
+    }
+
+    @keyframes flicker-naked {
+        from {
+            rotate: -30deg;
+        }
+
+        to {
+            rotate: 0deg;
+        }
+
     }
 </style>
 
@@ -117,12 +139,14 @@
                 </div>
             </div>
             <div class="row">
-                <img class="img-fluid align-self-start" src="images/main_index/left_naked.png">
+                <div class="flicker-naked">
+                    <img class="inner img-fluid align-self-start" src="images/main_index/left_naked.png">
+                </div>
             </div>
         </div>
         <div class="col my-auto">
             <div class="slide-right-to-left-apple">
-                <img class="inner img-fluid" src="images/main_index/right_apple.png">
+                <img class="inner img-fluid" src="images/main_index/right_apple.png" style="margin-left: 40%;">
             </div>
         </div>
         <img class="row img-fluid " src="images/main_index/bottom_img.png">
