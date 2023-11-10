@@ -15,13 +15,15 @@ This is a prototype for a static portfolio website.
 * Navbar when small screen
 * Store fonts locally (faster?)
 
+* change button for menu
+* align right the items of navbar when shrinked
+
 ## Landing page
 
 * Check with honey specific setup + animation
 * Animations on scroll: https://alvarotrigo.com/blog/css-animations-scroll/
-* Animation naked women: start vertical twist left and get back in place
-* Apple should be more to the right (not merge in center)
 * header menu when shrinked
+
 
 ## About Pomme
 
@@ -55,7 +57,6 @@ This is a prototype for a static portfolio website.
 
 ## Photography
 
-* Proper images on photography selection page
 
 ### Portraits
 
