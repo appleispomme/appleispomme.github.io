@@ -7,27 +7,89 @@
 
 <style>
     a {
-        text-align: center;
         font-family: 'Oswald', sans-serif;
+    }
+
+    .dropdown-menu {
+        font-size: small;
+    }
+
+    .navbar-toggler {
+        border: none;
+    }
+
+    /* .navbar {
+        backdrop-filter: blur(5px);
+    } */
+
+    @media (max-width: 767.98px) {
+
+        .largeNavbar {
+            display: none;
+        }
+
+        .smallNavbar {
+            display: block;
+        }
+
+        a {
+            text-align: right !important;
+        }
+
+        .smallNavbar .container-fluid .navbar-collapse .navbar-nav {
+            /* Styling */
+            /* background-color: aqua; */
+            border-radius: 10px;
+            backdrop-filter: blur(5px);
+
+            /* Size settings*/
+            width: 180px !important;
+            margin-left: auto !important;
+            margin-right: 0px !important;
+            padding-right: 10px !important;
+            margin-top: 10px;
+        }
+
+        .dropdown-menu {
+            /* Styling */
+            background: none;
+            border: none;
+            justify-content: right;
+            /* Size settings*/
+            width: 100px !important;
+            margin-right: 0px !important;
+            margin-left: auto !important;
+        }
+    }
+
+
+    @media (min-width: 767.98px) {
+        .largeNavbar {
+            display: block;
+        }
+
+        .smallNavbar {
+            display: none;
+        }
     }
 </style>
 
-<div style="margin-bottom: 100px;">
+<div class="largeNavbar" style="margin-bottom: 100px;">
 
-    <nav class="navbar fixed-top navbar-expand-lg ">
+    <nav class="navbar navbar-expand fixed-top">
         <div class="container-fluid">
             <!-- Logo -->
             <a class="navbar-brand" href="/index.html">
                 <img src="/images/logo_banner.png" alt="Logo" height="30" class="d-inline-block align-text-top">
             </a>
             <!-- Buttons -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-            </button>
+            </button> -->
             <!-- Menu -->
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav justify">
                     <li class="nav-item">
                         <a class="nav-link" href="/about_pomme.html">About Pomme</a>
                     </li>
@@ -68,6 +130,67 @@
             </div>
         </div>
     </nav>
+</div>
+
+
+<div class="smallNavbar" style="margin-bottom: 100px;">
+
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="/index.html">
+                <img src="/images/logo_banner.png" alt="Logo" height="30" class="d-inline-block align-text-top">
+            </a>
+            <!-- Buttons -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about_pomme.html">About Pomme</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="/projects/index_projects.html"
+                            id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            Projects
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end pe-3">
+                            <a class="dropdown-item" href="/projects/soje.html">Remember: Soje</a>
+                            <a class="dropdown-item" href="/projects/light.html">Light</a>
+                            <a class="dropdown-item" href="/projects/tea_break.html">Tea break</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="/career/index_career.html" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Career
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="/career/journalism.html">Journalist</a>
+                            <a class="dropdown-item" href="/career/mindcafe.html">Brand manager</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="/photography/index_photography.html"
+                            id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            Photography
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="/photography/portrait.html">Portrait</a>
+                            <a class="dropdown-item" href="/photography/snap.html">Snap</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"

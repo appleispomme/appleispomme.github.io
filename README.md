@@ -12,17 +12,15 @@ This is a prototype for a static portfolio website.
 * Anti-flickering stuff
 * Spacing below title and between rows (a bit small for now, see "Light")
 * Animations on all titles
-* Navbar when small screen
 * Store fonts locally (faster?)
+* Animation on navbar button
 
-* change button for menu
-* align right the items of navbar when shrinked
+* ASk Mihyun small navbar: fixed VS sticky
 
 ## Landing page
 
 * Check with honey specific setup + animation
 * Animations on scroll: https://alvarotrigo.com/blog/css-animations-scroll/
-* header menu when shrinked
 
 
 ## About Pomme
@@ -39,8 +37,6 @@ This is a prototype for a static portfolio website.
 ### Light
 
 ### Tea-break
-
-* Add margin at bottom or padding (there is no white space for now) or set a breakpoint (max height)
 
 ## Career
 
