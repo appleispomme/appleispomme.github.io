@@ -4,9 +4,18 @@ This is a prototype for a static portfolio website.
 
 # To-do
 
+## High prio
+
+* Do carousel
+* Do gallery
+    * https://codepen.io/vajkri/pen/opbyvN
+
 ## General
 
-* Ask Mihyun for favicon: https://www.w3schools.com/html/html_favicon.asp
+* lazyload for gallery and heavy photography pages
+    * https://github.com/verlok/vanilla-lazyload
+* Ask Mihyun for favicon: 
+    * https://www.w3schools.com/html/html_favicon.asp
 * Discuss spacing title, etc.
 * center of header
 * Anti-flickering stuff
