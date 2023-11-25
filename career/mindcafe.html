@@ -28,6 +28,16 @@
             // $("#footer").load("footer.html");
         }); 
     </script>
+
+    <!-- Script for enlarged image -->
+    <script>
+        $(function () {
+            $('.pop').on('click', function () {
+                $('.imagepreview').attr('src', $(this).find('img').attr('src'));
+                $('#imagemodal').modal('show');
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -95,12 +105,24 @@
             </p>
         </div>
         <div class="row">
-            <img class="col" src="/career/images/mindcafe/jp_ads_1.png">
-            <img class="col" src="/career/images/mindcafe/jp_ads_2.png">
-            <img class="col" src="/career/images/mindcafe/jp_ads_3.png">
+            <div class="col-4">
+                <a href="#responsive" class="pop">
+                    <img src="/career/images/mindcafe/jp_ads_1.png" class="img-fluid">
+                </a>
+            </div>
+            <div class="col-4">
+                <a href="#responsive" class="pop">
+                    <img src="/career/images/mindcafe/jp_ads_2.png" class="img-fluid">
+                </a>
+            </div>
+            <div class="col-4">
+                <a href="#responsive" class="pop">
+                    <img src="/career/images/mindcafe/jp_ads_3.png" class="img-fluid">
+                </a>
+            </div>
         </div>
         <div class="caption">
-            Banners for marketing campaign
+            Banners for marketing campaign. Click to enlarge.
         </div>
 
         <p style="text-align: center; font-size: large; font-style: italic; margin-top: 50px; margin-bottom: 50px;">
@@ -124,13 +146,13 @@
         <div class="section-title">Branded contents (owned-media)</div>
 
         <div class="row">
-            <video class="col-lg" controls>
+            <video class="col-4" controls>
                 <source src="/career/images/mindcafe/branded_contents_1.mp4" type="video/mp4">
             </video>
-            <video class="col-lg" controls>
+            <video class="col-4" controls>
                 <source src="/career/images/mindcafe/branded_contents_2.mp4" type="video/mp4">
             </video>
-            <video class="col-lg" controls>
+            <video class="col-4" controls>
                 <source src="/career/images/mindcafe/branded_contents_3.mp4" type="video/mp4">
             </video>
         </div>
@@ -139,21 +161,50 @@
 
         <div class="section-title">Branded contents for SNS channel(owned-media)</div>
         <div class="row">
-            <img class="col-lg" src="/career/images/mindcafe/sns_1.jpg">
-            <img class="col-lg" src="/career/images/mindcafe/sns_2.jpg">
-            <img class="col-lg" src="/career/images/mindcafe/sns_3.jpg">
-            <img class="col-lg" src="/career/images/mindcafe/sns_4.jpg">
-            <img class="col-lg" src="/career/images/mindcafe/sns_5.jpg">
-            <img class="col-lg" src="/career/images/mindcafe/sns_6.jpg">
-            <img class="col-lg" src="/career/images/mindcafe/sns_7.jpg">
+            <div class="col-lg col-md-3 col-4">
+                <a href="#responsive" class="pop">
+                    <img src="/career/images/mindcafe/sns_1.jpg" class="img-fluid">
+                </a>
+            </div>
+            <div class="col-lg col-md-3 col-4">
+                <a href="#responsive" class="pop">
+                    <img src="/career/images/mindcafe/sns_2.jpg" class="img-fluid">
+                </a>
+            </div>
+            <div class="col-lg col-md-3 col-4">
+                <a href="#responsive" class="pop">
+                    <img src="/career/images/mindcafe/sns_3.jpg" class="img-fluid">
+                </a>
+            </div>
+            <div class="col-lg col-md-3 col-4">
+                <a href="#responsive" class="pop">
+                    <img src="/career/images/mindcafe/sns_4.jpg" class="img-fluid">
+                </a>
+            </div>
+            <div class="col-lg col-md-3 col-4">
+                <a href="#responsive" class="pop">
+                    <img src="/career/images/mindcafe/sns_5.jpg" class="img-fluid">
+                </a>
+            </div>
+            <div class="col-lg col-md-3 col-4">
+                <a href="#responsive" class="pop">
+                    <img src="/career/images/mindcafe/sns_6.jpg" class="img-fluid">
+                </a>
+            </div>
+            <div class="col-lg col-md-3 col-4">
+                <a href="#responsive" class="pop">
+                    <img src="/career/images/mindcafe/sns_7.jpg" class="img-fluid">
+                </a>
+            </div>
         </div>
+        <div class="caption">Click to enlarge</div>
 
         <div class="section-title">Video ads-source for Twitter (paid-media)</div>
         <div class="row">
-            <video class="col-lg" controls>
+            <video class="col-6" controls>
                 <source src="/career/images/mindcafe/twitter_1.mp4" type="video/mp4">
             </video>
-            <video class="col-lg" controls>
+            <video class="col-6" controls>
                 <source src="/career/images/mindcafe/twitter_2.mp4" type="video/mp4">
             </video>
         </div>
@@ -161,13 +212,40 @@
 
         <div class="section-title">"Mamorime" service design</div>
         <div class="row">
-            <p class="col-lg">
-                For Japanese market, team and I designed service name "mamorime" which is provide professional help for
-                user who left post on community in random. The word "mamorime" containing meaning of "guard something"
-                in Japanese, 守る（マモル）. To express the feature well I come up with idea, combining heart and guardian
-                angel.
-            </p>
-            <img class="col-lg" src="/career/images/mindcafe/mamorime.png">
+            <div class="col-md-6">
+                <p>
+                    For Japanese market, team and I designed service name "mamorime" which is provide professional help
+                    for
+                    user who left post on community in random. The word "mamorime" containing meaning of "guard
+                    something"
+                    in Japanese, 守る（マモル）. To express the feature well I come up with idea, combining heart and guardian
+                    angel.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <img src="/career/images/mindcafe/mamorime.png" class="img-fluid">
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 
+    # ==========================================================================
+        Modal: enlarge image
+    # ==========================================================================    
+    -->
+
+    <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <!-- <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div> -->
+                <div class="modal-body">
+                    <img src="" class="imagepreview img-fluid">
+                </div>
+            </div>
         </div>
     </div>
 
