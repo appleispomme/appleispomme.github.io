@@ -7,17 +7,36 @@
         width: auto;
     }
 
-    #myCarousel_hatred .carousel-inner .carousel-item img {
-        /* border-color: blue;
-        border-style: solid; */
-        padding-top: 2.5%;
-        padding-bottom: 2.5%;
-    }
-
     /* .container {
         margin-top: 100px;
         margin-bottom: 100px;
     } */
+
+    /* lightSlider gallery */
+    .lightSlider ul {
+        list-style: none outside none;
+        padding-left: 0;
+        margin-bottom: 0;
+
+    }
+
+    .lightSlider li {
+        display: block;
+        float: left;
+        margin-right: 5px;
+        cursor: pointer;
+        border-color: red;
+        border-style: solid;
+    }
+
+    .lightSlider img {
+        display: block;
+        /* height: auto;
+        max-width: 100%; */
+        height: 100%;
+        width: auto;
+        object-fit: cover;
+    }
 
     /*  Proper gallery */
 
@@ -35,12 +54,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portraits - All about Pomme</title>
+
     <!-- Javascript for header -->
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- lightslider -->
+    <link type="text/css" rel="stylesheet" href="/node_modules/lightslider/src/css/lightslider.css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="/node_modules/lightslider/src/js/lightslider.js"></script>
 
+    <!-- Function header  -->
     <script>
         $(function () {
             $("#header").load("../header.html");
@@ -69,109 +94,73 @@
 
     <!-- 
     # ==========================================================================
-        Hatred: Carousel 
+        Hatred
     # ==========================================================================    
     -->
 
-    <!-- Main pictures -->
-
     <div class="container">
+
+        <!-- Main picture -->
         <div class="row">
-            <div class="col-lg">
+            <div class="col">
                 <img class="img-fluid" src="/photography/images/portrait/hatred_top.jpg">
             </div>
 
-            <div class="col-lg my-auto">
+            <div class="col my-auto">
                 <h2 class="page-title">HATRED</h2>
-                <h2 class="page-subtitle">Subtitle?</h2>
+                <!-- <h2 class="page-subtitle">Subtitle?</h2> -->
             </div>
         </div>
 
         <!-- Hatred: Carousel -->
-
         <div class="row">
-            <div id="myCarousel_hatred" class="carousel slide" data-bs-ride="carousel">
-                <!-- Indicators: need same number as slides -->
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#myCarousel_hatred" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#myCarousel_hatred" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#myCarousel_hatred" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                    <!-- <button type="button" data-bs-target="#myCarousel_hatred" data-bs-slide-to="3"
-                        aria-label="Slide 4"></button> -->
-                </div>
-                <!-- Inner and items -->
-                <div class="carousel-inner">
+            <ul id="lightSlider-hatred" class="lightSlider">
+                <li>
+                    <img class="img-fluid" src="/photography/images/portrait/hatred_carousel/1.jpg" />
+                </li>
+                <li style="height: 100%;">
+                    <img class="img-fluid" src="/photography/images/portrait/hatred_carousel/2.jpg" />
+                </li>
+                <li style="height: 100%;">
+                    <img class="img-fluid" src="/photography/images/portrait/hatred_carousel/3.jpg" />
+                </li>
+                <li style="height: 100%;">
+                    <img class="img-fluid" src="/photography/images/portrait/hatred_carousel/4.jpg" />
+                </li>
+                <li style="height: 100%;">
+                    <img class="img-fluid" src="/photography/images/portrait/hatred_carousel/5.jpg" />
+                </li>
+                <li style="height: 100%;">
+                    <img class="img-fluid" src="/photography/images/portrait/hatred_carousel/6.jpg" />
+                </li>
+                <li style="height: 100%;">
+                    <img class="img-fluid" src="/photography/images/portrait/hatred_carousel/7.jpg" />
+                </li>
+                <li style="height: 100%;">
+                    <img class="img-fluid" src="/photography/images/portrait/hatred_carousel/8.jpg" />
+                </li>
+                <li style="height: 100%;">
+                    <img class="img-fluid" src="/photography/images/portrait/hatred_carousel/9.jpg" />
+                </li>
+                <li style="height: 100%;">
+                    <img class="img-fluid" src="/photography/images/portrait/hatred_carousel/10.jpg" />
+                </li>
+                <li style="height: 100%;">
+                    <img class="img-fluid" src="/photography/images/portrait/hatred_carousel/11.jpg" />
+                </li>
+                <li style="height: 100%;">
+                    <img class="img-fluid" src="/photography/images/portrait/hatred_carousel/12.jpg" />
+                </li>
+            </ul>
 
-                    <div class="carousel-item active">
-                        <div class="row">
-                            <div class=col-md>
-                                <img class="img-fluid" src="/photography/images/portrait/hatred_carousel/1.jpg">
-                            </div>
-                            <div class=col-md>
-                                <img class="img-fluid" src="/photography/images/portrait/hatred_carousel/2.jpg">
-                            </div>
-                            <div class=col-md>
-                                <img class="img-fluid" src="/photography/images/portrait/hatred_carousel/3.jpg">
-                            </div>
-                            <div class=col-md>
-                                <img class="img-fluid" src="/photography/images/portrait/hatred_carousel/4.jpg">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class=col-md>
-                                <img class="img-fluid" src="/photography/images/portrait/hatred_carousel/5.jpg">
-                            </div>
-                            <div class=col-md>
-                                <div class="row">
-                                    <img class="img-fluid" src="/photography/images/portrait/hatred_carousel/6.jpg">
-                                </div>
-                                <div class="row">
-                                    <img class="img-fluid" src="/photography/images/portrait/hatred_carousel/10.jpg">
-                                </div>
-                            </div>
-                            <div class=col-md>
-                                <img class="img-fluid" src="/photography/images/portrait/hatred_carousel/7.jpg">
-                            </div>
-                            <div class=col-md>
-                                <img class="img-fluid" src="/photography/images/portrait/hatred_carousel/8.jpg">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class=col-md>
-                                <img class="img-fluid" src="/photography/images/portrait/hatred_carousel/9.jpg">
-                            </div>
-                            <div class=col-md>
-                                <img class="img-fluid" src="/photography/images/portrait/hatred_carousel/13.jpg">
-                            </div>
-                            <div class=col-md>
-                                <img class="img-fluid" src="/photography/images/portrait/hatred_carousel/11.jpg">
-                            </div>
-                            <div class=col-md>
-                                <img class="img-fluid" src="/photography/images/portrait/hatred_carousel/12.jpg">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Buttons: in carousel, not in inner -->
-                <a class="carousel-control-prev bg-transparent w-aut" href="#myCarousel_hatred" role="button"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                </a>
-                <a class="carousel-control-next bg-transparent w-aut" href="#myCarousel_hatred" role="button"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                </a>
-            </div>
-
+            <script type="text/javascript">
+                $('#lightSlider-hatred').lightSlider({
+                    item: 4,
+                    loop: true,
+                    pager: true
+                });
+            </script>
         </div>
-    </div>
     </div>
 
     <!-- 
@@ -183,13 +172,13 @@
     <div class="container">
         <div class="row" style="margin-bottom: 100px;">
             <h2 class="page-title">Night light</h2>
-            <h2 class="page-subtitle">Subtitle?</h2>
+            <!-- <h2 class="page-subtitle">Subtitle?</h2> -->
         </div>
         <div class="row">
-            <div class="col-sm">
+            <div class="col">
                 <img src="/photography/images/portrait/night_light_1.jpg" style="width: 100%; height:auto">
             </div>
-            <div class="col-sm">
+            <div class="col">
                 <div class="row">
                     <img src="/photography/images/portrait/night_light_2.jpg" style="width: 100%; height:auto">
                 </div>
@@ -207,9 +196,8 @@
     # ==========================================================================    
     -->
 
-    <!-- Main pictures -->
-
     <div class="container">
+        <!-- Main pictures -->
         <div class="row">
             <img class="col-lg" src="/photography/images/portrait/modern_maiko_top.jpg">
             <div class="col-lg my-auto">
@@ -219,81 +207,50 @@
         </div>
 
         <!-- Modern Maiko: Carousel -->
-
         <div class="row">
-            <div id="myCarousel_modern_maiko" class="carousel slide" data-bs-ride="carousel">
-                <!-- Indicators -->
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#myCarousel_modern_maiko" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#myCarousel_modern_maiko" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#myCarousel_modern_maiko" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                </div>
-                <!-- Items -->
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="row">
-                            <div class="col-sm">
-                                <img class="img-fluid" src="/photography/images/portrait/modern_maiko_carousel/1.jpg">
-                            </div>
-                            <div class="col-sm">
-                                <img class="img-fluid" src="/photography/images/portrait/modern_maiko_carousel/2.jpg">
-                            </div>
-                            <div class="col-sm">
-                                <img class="img-fluid" src="/photography/images/portrait/modern_maiko_carousel/3.jpg">
-                            </div>
-                            <div class="col-sm">
-                                <img class="img-fluid" src="/photography/images/portrait/modern_maiko_carousel/4.jpg">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-sm">
-                                <img class="img-fluid" src="/photography/images/portrait/modern_maiko_carousel/5.jpg">
-                            </div>
-                            <div class="col-sm">
-                                <img class="img-fluid" src="/photography/images/portrait/modern_maiko_carousel/6.jpg">
-                            </div>
-                            <div class="col-sm">
-                                <img class="img-fluid" src="/photography/images/portrait/modern_maiko_carousel/7.jpg">
-                            </div>
-                            <div class="col-sm">
-                                <img class="img-fluid" src="/photography/images/portrait/modern_maiko_carousel/8.jpg">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-sm">
-                                <img class="img-fluid" src="/photography/images/portrait/modern_maiko_carousel/9.jpg">
-                            </div>
-                            <div class="col-sm">
-                                <img class="img-fluid" src="/photography/images/portrait/modern_maiko_carousel/10.jpg">
-                            </div>
-                            <div class="col-sm">
+            <ul id="lightSlider-maiko" class="lightSlider">
+                <li>
+                    <img class="img-fluid" src="/photography/images/portrait/modern_maiko_carousel/1.jpg" />
+                </li>
+                <li style="height: 100%;">
+                    <img class="img-fluid" src="/photography/images/portrait/modern_maiko_carousel/2.jpg" />
+                </li>
+                <li style="height: 100%;">
+                    <img class="img-fluid" src="/photography/images/portrait/modern_maiko_carousel/3.jpg" />
+                </li>
+                <li style="height: 100%;">
+                    <img class="img-fluid" src="/photography/images/portrait/modern_maiko_carousel/4.jpg" />
+                </li>
+                <li style="height: 100%;">
+                    <img class="img-fluid" src="/photography/images/portrait/modern_maiko_carousel/5.jpg" />
+                </li>
+                <li style="height: 100%;">
+                    <img class="img-fluid" src="/photography/images/portrait/modern_maiko_carousel/6.jpg" />
+                </li>
+                <li style="height: 100%;">
+                    <img class="img-fluid" src="/photography/images/portrait/modern_maiko_carousel/7.jpg" />
+                </li>
+                <li style="height: 100%;"> <!-- Crop in a different manner? Off-center-->
+                    <img class="img-fluid" src="/photography/images/portrait/modern_maiko_carousel/8.jpg" />
+                </li>
+                <li style="height: 100%;">
+                    <img class="img-fluid" src="/photography/images/portrait/modern_maiko_carousel/9.jpg" />
+                </li>
+                <li style="height: 100%;">
+                    <img class="img-fluid" src="/photography/images/portrait/modern_maiko_carousel/10.jpg" />
+                </li>
+            </ul>
 
-                            </div>
-                            <div class="col-sm">
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Controls -->
-                <a class="carousel-control-prev bg-transparent w-aut" href="#myCarousel_modern_maiko" role="button"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                </a>
-                <a class="carousel-control-next bg-transparent w-aut" href="#myCarousel_modern_maiko" role="button"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                </a>
-            </div>
+            <script type="text/javascript">
+                $('#lightSlider-maiko').lightSlider({
+                    item: 4,
+                    loop: true,
+                    pager: true
+                });
+            </script>
         </div>
     </div>
+
 
     <!-- 
     # ==========================================================================
@@ -301,458 +258,323 @@
     # ==========================================================================    
     -->
 
-    <!-- Main pictures -->
+
 
     <div class="container">
+        <!-- Main pictures -->
         <div class="row">
-            <img class="col-md" src="/photography/images/portrait/checkie_top_1.jpg">
-            <img class="col-md" src="/photography/images/portrait/checkie_top_2.jpg">
-            <div class="col-md my-auto">
+            <img class="col" src="/photography/images/portrait/checkie_top_1.jpg">
+            <img class="col" src="/photography/images/portrait/checkie_top_2.jpg">
+            <div class="col my-auto">
                 <h2 class="page-title">CheckiE</h2>
                 <h2 class="page-subtitle">Tokyo, Kanagawa</h2>
             </div>
         </div>
 
-        <!-- Checkie: Carousel -->
-
+        <!-- Modern Maiko: Carousel -->
         <div class="row">
-            <div id="myCarousel_checkie" class="carousel slide" data-bs-ride="carousel">
-                <!-- Indicators -->
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#myCarousel_checkie" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#myCarousel_checkie" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#myCarousel_checkie" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#myCarousel_checkie" data-bs-slide-to="3"
-                        aria-label="Slide 4"></button>
-                    <button type="button" data-bs-target="#myCarousel_checkie" data-bs-slide-to="4"
-                        aria-label="Slide 5"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="row">
-                            <div class="col-sm">
-                                <img class="img-fluid" src="/photography/images/portrait/checkie_carousel/1.jpg">
-                            </div>
-                            <div class="col-sm">
-                                <img class="img-fluid" src="/photography/images/portrait/checkie_carousel/2.jpg">
-                            </div>
-                            <div class="col-sm">
-                                <img class="img-fluid" src="/photography/images/portrait/checkie_carousel/3.jpg">
-                            </div>
-                            <div class="col-sm">
-                                <img class="img-fluid" src="/photography/images/portrait/checkie_carousel/4.jpg">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-sm">
-                                <img class="img-fluid" src="/photography/images/portrait/checkie_carousel/5.jpg">
-                            </div>
-                            <div class="col-sm">
-                                <img class="img-fluid" src="/photography/images/portrait/checkie_carousel/6.jpg">
-                            </div>
-                            <div class="col-sm">
-                                <img class="img-fluid" src="/photography/images/portrait/checkie_carousel/7.jpg">
-                            </div>
-                            <div class="col-sm">
-                                <img class="img-fluid" src="/photography/images/portrait/checkie_carousel/8.jpg">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-sm">
-                                <img class="img-fluid" src="/photography/images/portrait/checkie_carousel/9.jpg">
-                            </div>
-                            <div class="col-sm">
-                                <img class="img-fluid" src="/photography/images/portrait/checkie_carousel/10.jpg">
-                            </div>
-                            <div class="col-sm">
-                                <img class="img-fluid" src="/photography/images/portrait/checkie_carousel/11.jpg">
-                            </div>
-                            <div class="col-sm">
-                                <img class="img-fluid" src="/photography/images/portrait/checkie_carousel/12.jpg">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="row">
-                                <div class="col-sm">
-                                    <img class="img-fluid" src="/photography/images/portrait/checkie_carousel/13.jpg">
-                                </div>
-                                <div class="col-sm">
-                                    <img class="img-fluid" src="/photography/images/portrait/checkie_carousel/14.jpg">
-                                </div>
-                                <div class="col-sm">
-                                    <img class="img-fluid" src="/photography/images/portrait/checkie_carousel/15.jpg">
-                                </div>
-                                <div class="col-sm">
-                                    <img class="img-fluid" src="/photography/images/portrait/checkie_carousel/16.jpg">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="row">
-                                <div class="col-sm">
-                                    <img class="img-fluid" src="/photography/images/portrait/checkie_carousel/17.jpg">
-                                </div>
-                                <div class="col-sm">
-                                    <img class="img-fluid" src="/photography/images/portrait/checkie_carousel/18.jpg">
-                                </div>
-                                <div class="col-sm">
-                                    <img class="img-fluid" src="/photography/images/portrait/checkie_carousel/19.jpg">
-                                </div>
-                                <div class="col-sm">
+            <ul id="lightSlider-checkie" class="lightSlider">
+                <li>
+                    <img class="img-fluid" src="/photography/images/portrait/checkie_carousel/1.jpg" />
+                </li>
+                <li style="height: 100%;">
+                    <img class="img-fluid" src="/photography/images/portrait/checkie_carousel/2.jpg" />
+                </li>
+                <li style="height: 100%;">
+                    <img class="img-fluid" src="/photography/images/portrait/checkie_carousel/3.jpg" />
+                </li>
+                <li style="height: 100%;">
+                    <img class="img-fluid" src="/photography/images/portrait/checkie_carousel/4.jpg" />
+                </li>
+                <li style="height: 100%;">
+                    <img class="img-fluid" src="/photography/images/portrait/checkie_carousel/5.jpg" />
+                </li>
+                <li style="height: 100%;">
+                    <img class="img-fluid" src="/photography/images/portrait/checkie_carousel/6.jpg" />
+                </li>
+                <li style="height: 100%;">
+                    <img class="img-fluid" src="/photography/images/portrait/checkie_carousel/7.jpg" />
+                </li>
+                <li style="height: 100%;">
+                    <img class="img-fluid" src="/photography/images/portrait/checkie_carousel/8.jpg" />
+                </li>
+                <li style="height: 100%;">
+                    <img class="img-fluid" src="/photography/images/portrait/checkie_carousel/9.jpg" />
+                </li>
+                <li style="height: 100%;">
+                    <img class="img-fluid" src="/photography/images/portrait/checkie_carousel/10.jpg" />
+                </li>
+                <li style="height: 100%;">
+                    <img class="img-fluid" src="/photography/images/portrait/checkie_carousel/11.jpg" />
+                </li>
+                <li style="height: 100%;">
+                    <img class="img-fluid" src="/photography/images/portrait/checkie_carousel/12.jpg" />
+                </li>
+                <li style="height: 100%;">
+                    <img class="img-fluid" src="/photography/images/portrait/checkie_carousel/13.jpg" />
+                </li>
+                <li style="height: 100%;">
+                    <img class="img-fluid" src="/photography/images/portrait/checkie_carousel/14.jpg" />
+                </li>
+                <li style="height: 100%;">
+                    <img class="img-fluid" src="/photography/images/portrait/checkie_carousel/15.jpg" />
+                </li>
+                <li style="height: 100%;">
+                    <img class="img-fluid" src="/photography/images/portrait/checkie_carousel/16.jpg" />
+                </li>
+                <li style="height: 100%;">
+                    <img class="img-fluid" src="/photography/images/portrait/checkie_carousel/17.jpg" />
+                </li>
+                <li style="height: 100%;">
+                    <img class="img-fluid" src="/photography/images/portrait/checkie_carousel/18.jpg" />
+                </li>
+                <li style="height: 100%;">
+                    <img class="img-fluid" src="/photography/images/portrait/checkie_carousel/19.jpg" />
+                </li>
+            </ul>
 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <a class="carousel-control-prev bg-transparent w-aut" href="#myCarousel_checkie" role="button"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                </a>
-                <a class="carousel-control-next bg-transparent w-aut" href="#myCarousel_checkie" role="button"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                </a>
-            </div>
+            <script type="text/javascript">
+                $('#lightSlider-checkie').lightSlider({
+                    item: 4,
+                    loop: true,
+                    pager: true
+                });
+            </script>
         </div>
-    </div>
 
-    <!-- 
+
+        <!-- 
     # ==========================================================================
         Dream
     # ==========================================================================    
     -->
 
-    <div class="container">
+        <div class="container">
 
-        <!-- Dream: Main pictures -->
+            <!-- Dream: Main pictures -->
 
-        <div class="row">
-            <img class="col-lg" src="/photography/images/portrait/dream_top.jpg">
-            <div class="col-lg my-auto">
-                <h2 class="page-title">Dream</h2>
-                <h2 class="page-subtitle">Keio Mita campus, Tokyo</h2>
+            <div class="row">
+                <img class="col" src="/photography/images/portrait/dream_top.jpg">
+                <div class="col my-auto">
+                    <h2 class="page-title">Dream</h2>
+                    <h2 class="page-subtitle">Keio Mita campus, Tokyo</h2>
+                </div>
+            </div>
+
+            <!-- Dream: Carousel -->
+            <div class="row">
+                <ul id="lightSlider-dream" class="lightSlider">
+                    <li>
+                        <img class="img-fluid" src="/photography/images/portrait/dream_carousel/1.jpg" />
+                    </li>
+                    <li style="height: 100%;">
+                        <img class="img-fluid" src="/photography/images/portrait/dream_carousel/2.jpg" />
+                    </li>
+                    <li style="height: 100%;">
+                        <img class="img-fluid" src="/photography/images/portrait/dream_carousel/3.jpg" />
+                    </li>
+                    <li style="height: 100%;">
+                        <img class="img-fluid" src="/photography/images/portrait/dream_carousel/4.jpg" />
+                    </li>
+                    <li style="height: 100%;">
+                        <img class="img-fluid" src="/photography/images/portrait/dream_carousel/5.jpg" />
+                    </li>
+                    <li style="height: 100%;">
+                        <img class="img-fluid" src="/photography/images/portrait/dream_carousel/6.jpg" />
+                    </li>
+                    <li style="height: 100%;">
+                        <img class="img-fluid" src="/photography/images/portrait/dream_carousel/7.jpg" />
+                    </li>
+                    <li style="height: 100%;">
+                        <img class="img-fluid" src="/photography/images/portrait/dream_carousel/8.jpg" />
+                    </li>
+                    <li style="height: 100%;">
+                        <img class="img-fluid" src="/photography/images/portrait/dream_carousel/9.jpg" />
+                    </li>
+                </ul>
+
+                <script type="text/javascript">
+                    $('#lightSlider-dream').lightSlider({
+                        item: 4,
+                        loop: true,
+                        pager: true
+                    });
+                </script>
             </div>
         </div>
 
-        <!-- Dream: Carousel -->
 
-        <div class="row">
-            <div id="myCarousel_dream" class="carousel slide" data-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#myCarousel_dream" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#myCarousel_dream" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#myCarousel_dream" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="row">
-                            <div class="col-sm">
-                                <img class="img-fluid" src="/photography/images/portrait/dream_carousel/1.jpg">
-                            </div>
-                            <div class="col-sm">
-                                <img class="img-fluid" src="/photography/images/portrait/dream_carousel/2.jpg">
-                            </div>
-                            <div class="col-sm">
-                                <img class="img-fluid" src="/photography/images/portrait/dream_carousel/3.jpg">
-                            </div>
-                            <div class="col-sm">
-                                <img class="img-fluid" src="/photography/images/portrait/dream_carousel/4.jpg">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-sm">
-                                <img class="img-fluid" src="/photography/images/portrait/dream_carousel/5.jpg">
-                            </div>
-                            <div class="col-sm">
-                                <img class="img-fluid" src="/photography/images/portrait/dream_carousel/6.jpg">
-                            </div>
-                            <div class="col-sm">
-                                <img class="img-fluid" src="/photography/images/portrait/dream_carousel/7.jpg">
-                            </div>
-                            <div class="col-sm">
-                                <img class="img-fluid" src="/photography/images/portrait/dream_carousel/8.jpg">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                            <img src="/photography/images/portrait/dream_carousel/9.jpg" class="img-fluid col-md">
-                        </div>
-                    </div>
-                </div>
-                <a class="carousel-control-prev bg-transparent w-aut" href="#myCarousel_dream" role="button"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                </a>
-                <a class="carousel-control-next bg-transparent w-aut" href="#myCarousel_dream" role="button"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                </a>
-            </div>
-
-        </div>
-    </div>
-
-    <!-- 
+        <!-- 
     # ==========================================================================
         Electric
     # ==========================================================================    
     -->
 
-    <!-- Main pictures -->
+        <!-- Main pictures -->
 
-    <div class="container">
-        <div class="row">
-            <img class="col-lg" src="/photography/images/portrait/electric_left.jpg">
-            <div class="col-lg my-auto">
-                <h2 class="page-title">Electric</h2>
-                <h2 class="page-subtitle">Tokyo</h2>
+        <div class="container">
+            <div class="row">
+                <img class="col" src="/photography/images/portrait/electric_left.jpg">
+                <div class="col my-auto">
+                    <h2 class="page-title">Electric</h2>
+                    <h2 class="page-subtitle">Tokyo</h2>
+                </div>
+            </div>
+
+            <!-- Carousel -->
+
+            <div class="row">
+                <ul id="lightSlider-electric" class="lightSlider">
+                    <li>
+                        <img class="img-fluid" src="/photography/images/portrait/electric_carousel/2.jpg" />
+                    </li>
+                    <li style="height: 100%;">
+                        <img class="img-fluid" src="/photography/images/portrait/electric_carousel/1.jpg" />
+                    </li>
+                    <li>
+                        <img class="img-fluid" src="/photography/images/portrait/electric_carousel/3.jpg" />
+                    </li>
+                    <li style="height: 100%;">
+                        <img class="img-fluid" src="/photography/images/portrait/electric_carousel/4.jpg" />
+                    </li>
+                    <li style="height: 100%;">
+                        <img class="img-fluid" src="/photography/images/portrait/electric_carousel/5.jpg" />
+                    </li>
+                    <li style="height: 100%;">
+                        <img class="img-fluid" src="/photography/images/portrait/electric_carousel/6.jpg" />
+                    </li>
+                    <li style="height: 100%;">
+                        <img class="img-fluid" src="/photography/images/portrait/electric_carousel/7.jpg" />
+                    </li>
+                    <li style="height: 100%;">
+                        <img class="img-fluid" src="/photography/images/portrait/electric_carousel/8.jpg" />
+                    </li>
+                    <li style="height: 100%;">
+                        <img class="img-fluid" src="/photography/images/portrait/electric_carousel/9.jpg" />
+                    </li>
+                    <li>
+                        <img class="img-fluid" src="/photography/images/portrait/electric_carousel/10.jpg" />
+                    </li>
+                    <li>
+                        <img class="img-fluid" src="/photography/images/portrait/electric_carousel/11.jpg" />
+                    </li>
+                    <li style="height: 100%;">
+                        <img class="img-fluid" src="/photography/images/portrait/electric_carousel/12.jpg" />
+                    </li>
+                    <li>
+                        <img class="img-fluid" src="/photography/images/portrait/electric_carousel/13.jpg" />
+                    </li>
+                    <li style="height: 100%;">
+                        <img class="img-fluid" src="/photography/images/portrait/electric_carousel/14.jpg" />
+                    </li>
+                    <li>
+                        <img class="img-fluid" src="/photography/images/portrait/electric_carousel/15.jpg" />
+                    </li>
+                    <li>
+                        <img class="img-fluid" src="/photography/images/portrait/electric_carousel/16.jpg" />
+                    </li>
+                    <li>
+                        <img class="img-fluid" src="/photography/images/portrait/electric_carousel/17.jpg" />
+                    </li>
+                    <li>
+                        <img class="img-fluid" src="/photography/images/portrait/electric_carousel/18.jpg" />
+                    </li>
+                    <li>
+                        <img class="img-fluid" src="/photography/images/portrait/electric_carousel/19.jpg" />
+                    </li>
+                    <li>
+                        <img class="img-fluid" src="/photography/images/portrait/electric_carousel/20.jpg" />
+                    </li>
+                    <li>
+                        <img class="img-fluid" src="/photography/images/portrait/electric_carousel/21.jpg" />
+                    </li>
+                    <li>
+                        <img class="img-fluid" src="/photography/images/portrait/electric_carousel/22.jpg" />
+                    </li>
+                    <li style="height: 100%;">
+                        <img class="img-fluid" src="/photography/images/portrait/electric_carousel/23.jpg" />
+                    </li>
+                    <li style="height: 100%;">
+                        <img class="img-fluid" src="/photography/images/portrait/electric_carousel/24.jpg" />
+                    </li>
+                </ul>
+
+                <script type="text/javascript">
+                    $('#lightSlider-electric').lightSlider({
+                        item: 4,
+                        loop: true,
+                        pager: true
+                    });
+                </script>
             </div>
         </div>
 
-        <!-- Carousel -->
-
-        <div class="row">
-            <div id="myCarousel_electric" class="carousel slide" data-bs-ride="carousel">
-                <!-- Indicators -->
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#myCarousel_electric" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#myCarousel_electric" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#myCarousel_electric" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#myCarousel_electric" data-bs-slide-to="3"
-                        aria-label="Slide 4"></button>
-                    <button type="button" data-bs-target="#myCarousel_electric" data-bs-slide-to="4"
-                        aria-label="Slide 5"></button>
-                    <button type="button" data-bs-target="#myCarousel_electric" data-bs-slide-to="5"
-                        aria-label="Slide 6"></button>
-                </div>
-                <!-- Items -->
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="row">
-                            <div class="col-sm">
-                                <img class="img-fluid" src="/photography/images/portrait/electric_carousel/1.jpg">
-                            </div>
-                            <div class="col-sm">
-                                <img class="img-fluid" src="/photography/images/portrait/electric_carousel/2.jpg">
-                            </div>
-                            <div class="col-sm">
-                                <img class="img-fluid" src="/photography/images/portrait/electric_carousel/3.jpg">
-                            </div>
-                            <div class="col-sm">
-                                <img class="img-fluid" src="/photography/images/portrait/electric_carousel/4.jpg">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-sm">
-                                <img class="img-fluid" src="/photography/images/portrait/electric_carousel/5.jpg">
-                            </div>
-                            <div class="col-sm">
-                                <img class="img-fluid" src="/photography/images/portrait/electric_carousel/6.jpg">
-                            </div>
-                            <div class="col-sm">
-                                <img class="img-fluid" src="/photography/images/portrait/electric_carousel/7.jpg">
-                            </div>
-                            <div class="col-sm">
-                                <img class="img-fluid" src="/photography/images/portrait/electric_carousel/8.jpg">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-sm">
-                                <img class="img-fluid" src="/photography/images/portrait/electric_carousel/9.jpg">
-                            </div>
-                            <div class="col-sm">
-                                <img class="img-fluid" src="/photography/images/portrait/electric_carousel/10.jpg">
-                            </div>
-                            <div class="col-sm">
-                                <img class="img-fluid" src="/photography/images/portrait/electric_carousel/11.jpg">
-                            </div>
-                            <div class="col-sm">
-                                <img class="img-fluid" src="/photography/images/portrait/electric_carousel/12.jpg">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-sm">
-                                <img class="img-fluid" src="/photography/images/portrait/electric_carousel/13.jpg">
-                            </div>
-                            <div class="col-sm">
-                                <img class="img-fluid" src="/photography/images/portrait/electric_carousel/14.jpg">
-                            </div>
-                            <div class="col-sm">
-                                <img class="img-fluid" src="/photography/images/portrait/electric_carousel/15.jpg">
-                            </div>
-                            <div class="col-sm">
-                                <img class="img-fluid" src="/photography/images/portrait/electric_carousel/16.jpg">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-sm">
-                                <img class="img-fluid" src="/photography/images/portrait/electric_carousel/17.jpg">
-                            </div>
-                            <div class="col-sm">
-                                <img class="img-fluid" src="/photography/images/portrait/electric_carousel/18.jpg">
-                            </div>
-                            <div class="col-sm">
-                                <img class="img-fluid" src="/photography/images/portrait/electric_carousel/19.jpg">
-                            </div>
-                            <div class="col-sm">
-                                <img class="img-fluid" src="/photography/images/portrait/electric_carousel/20.jpg">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-sm">
-                                <img class="img-fluid" src="/photography/images/portrait/electric_carousel/21.jpg">
-                            </div>
-                            <div class="col-sm">
-                                <img class="img-fluid" src="/photography/images/portrait/electric_carousel/22.jpg">
-                            </div>
-                            <div class="col-sm">
-                                <img class="img-fluid" src="/photography/images/portrait/electric_carousel/23.jpg">
-                            </div>
-                            <div class="col-sm">
-                                <img class="img-fluid" src="/photography/images/portrait/electric_carousel/24.jpg">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Controls -->
-                <a class="carousel-control-prev bg-transparent w-aut" href="#myCarousel_electric" role="button"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                </a>
-                <a class="carousel-control-next bg-transparent w-aut" href="#myCarousel_electric" role="button"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <!-- 
+        <!-- 
     # ==========================================================================
         Japanese text (Daejeon)
     # ==========================================================================    
     -->
 
 
-    <div class="container">
+        <div class="container">
 
-        <!-- Main pictures -->
-
-        <div class="row">
-            <img class="col-lg" src="/photography/images/portrait/daejeon_right.jpg">
-            <div class="col-lg my-auto">
-                <h2 class="page-title">TITLE</h2>
-                <h2 class="page-subtitle">Daejeon, Republic of Korea</h2>
-            </div>
-        </div>
-
-        <!-- Carousel -->
-
-        <div class="row">
-            <div id="myCarousel_daejeon" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#myCarousel_daejeon" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#myCarousel_daejeon" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <!-- <button type="button" data-bs-target="#myCarousel_daejeon" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button> -->
+            <!-- Main pictures -->
+            <div class="row">
+                <img class="col" src="/photography/images/portrait/daejeon_right.jpg">
+                <div class="col my-auto">
+                    <h2 class="page-title">TITLE</h2>
+                    <h2 class="page-subtitle">Daejeon, Republic of Korea</h2>
                 </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="row">
-                            <div class="col-sm">
-                                <div class="row">
-                                    <img class="img-fluid" src="/photography/images/portrait/daejeon_carousel/1.jpg">
-                                </div>
-                                <div class="row">
-                                    <img class="img-fluid" src="/photography/images/portrait/daejeon_carousel/3.jpg">
-                                </div>
-
-                            </div>
-                            <div class="col-sm">
-                                <img class="img-fluid" src="/photography/images/portrait/daejeon_carousel/2.jpg">
-                            </div>
-                            <div class="col-sm">
-                                <img class="img-fluid" src="/photography/images/portrait/daejeon_carousel/4.jpg">
-                            </div>
-                            <div class="col-sm">
-                                <img class="img-fluid" src="/photography/images/portrait/daejeon_carousel/5.jpg">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-sm">
-                                <img class="img-fluid" src="/photography/images/portrait/daejeon_carousel/10.jpg">
-                            </div>
-                            <div class="col-sm">
-                                <div class="row">
-                                    <img class="img-fluid" src="/photography/images/portrait/daejeon_carousel/6.jpg">
-                                </div>
-                                <div class="row">
-                                    <img class="img-fluid" src="/photography/images/portrait/daejeon_carousel/9.jpg">
-                                </div>
-                            </div>
-                            <div class="col-sm">
-                                <div class="row">
-                                    <img class="img-fluid" src="/photography/images/portrait/daejeon_carousel/7.jpg">
-                                </div>
-                                <div class="row">
-                                    <img class="img-fluid" src="/photography/images/portrait/daejeon_carousel/8.jpg">
-                                </div>
-                            </div>
-                            <div class="col-sm">
-                                <img class="img-fluid" src="/photography/images/portrait/daejeon_carousel/11.jpg">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <a class="carousel-control-prev bg-transparent w-aut" href="#myCarousel_daejeon" role="button"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                </a>
-                <a class="carousel-control-next bg-transparent w-aut" href="#myCarousel_daejeon" role="button"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                </a>
             </div>
 
-        </div>
+            <!-- Carousel -->
+            <div class="row">
+                <ul id="lightSlider-daejeon" class="lightSlider">
+                    <li>
+                        <img class="img-fluid" src="/photography/images/portrait/daejeon_carousel/5.jpg" />
+                    </li>
+                    <li style="height: 100%;">
+                        <img class="img-fluid" src="/photography/images/portrait/daejeon_carousel/1.jpg" />
+                    </li>
+                    <li style="height: 100%;">
+                        <img class="img-fluid" src="/photography/images/portrait/daejeon_carousel/2.jpg" />
+                    </li>
+                    <li style="height: 100%;">
+                        <img class="img-fluid" src="/photography/images/portrait/daejeon_carousel/3.jpg" />
+                    </li>
+                    <li style="height: 100%;">
+                        <img class="img-fluid" src="/photography/images/portrait/daejeon_carousel/4.jpg" />
+                    </li>
 
-    </div>
+                    <li style="height: 100%;">
+                        <img class="img-fluid" src="/photography/images/portrait/daejeon_carousel/6.jpg" />
+                    </li>
+                    <li style="height: 100%;">
+                        <img class="img-fluid" src="/photography/images/portrait/daejeon_carousel/7.jpg" />
+                    </li>
+                    <li style="height: 100%;">
+                        <img class="img-fluid" src="/photography/images/portrait/daejeon_carousel/8.jpg" />
+                    </li>
+                    <li style="height: 100%;">
+                        <img class="img-fluid" src="/photography/images/portrait/daejeon_carousel/9.jpg" />
+                    </li>
+                    <li style="height: 100%;">
+                        <img class="img-fluid" src="/photography/images/portrait/daejeon_carousel/10.jpg" />
+                    </li>
+                    <li style="height: 100%;">
+                        <img class="img-fluid" src="/photography/images/portrait/daejeon_carousel/11.jpg" />
+                    </li>
+                </ul>
+
+                <script type="text/javascript">
+                    $('#lightSlider-daejeon').lightSlider({
+                        item: 4,
+                        loop: true,
+                        pager: true
+                    });
+                </script>
+            </div>
+        </div>
     </div>
 
     <!-- 
@@ -766,21 +588,40 @@
         <!-- natsume: Main pictures -->
 
         <div class="row">
-            <img class="col-lg" src="/photography/images/portrait/natsume_top.jpg">
-            <div class="col-lg my-auto">
+            <img class="col" src="/photography/images/portrait/natsume_top.jpg">
+            <div class="col my-auto">
                 <h2 class="page-title">Natsume</h2>
                 <h2 class="page-subtitle">Ueno, Tokyo</h2>
             </div>
         </div>
 
         <!-- natsume: Carousel -->
-
         <div class="row">
-            <img src="/photography/images/portrait/natsume_carousel/1.jpg" class="img-fluid col-md">
-            <img src="/photography/images/portrait/natsume_carousel/2.jpg" class="img-fluid col-md">
-            <img src="/photography/images/portrait/natsume_carousel/3.jpg" class="img-fluid col-md">
-            <img src="/photography/images/portrait/natsume_carousel/4.jpg" class="img-fluid col-md">
-            <img src="/photography/images/portrait/natsume_carousel/6.jpg" class="img-fluid col-md">
+            <ul id="lightSlider-natsume" class="lightSlider">
+                <li>
+                    <img class="img-fluid" src="/photography/images/portrait/natsume_carousel/1.jpg" />
+                </li>
+                <li style="height: 100%;">
+                    <img class="img-fluid" src="/photography/images/portrait/natsume_carousel/2.jpg" />
+                </li>
+                <li style="height: 100%;">
+                    <img class="img-fluid" src="/photography/images/portrait/natsume_carousel/3.jpg" />
+                </li>
+                <li style="height: 100%;">
+                    <img class="img-fluid" src="/photography/images/portrait/natsume_carousel/4.jpg" />
+                </li>
+                <li style="height: 100%;">
+                    <img class="img-fluid" src="/photography/images/portrait/natsume_carousel/5.jpg" />
+                </li>
+            </ul>
+
+            <script type="text/javascript">
+                $('#lightSlider-natsume').lightSlider({
+                    item: 4,
+                    loop: true,
+                    pager: true
+                });
+            </script>
         </div>
     </div>
 
@@ -895,13 +736,9 @@
 
     <!-- 
     # ==========================================================================
-        Script 
+        Script Bootstrap
     # ==========================================================================    
     -->
-
-
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

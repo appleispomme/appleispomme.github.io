@@ -9,6 +9,7 @@ This is a prototype for a static portfolio website.
 * Do carousel
 * Do gallery
     * https://codepen.io/vajkri/pen/opbyvN
+    * Now ok but modal not well centered
 
 ## General
 
@@ -64,6 +65,8 @@ This is a prototype for a static portfolio website.
 
 
 ### Portraits
+
+* apply height 100% on all otems except the first for homogenized size
 
 ### Snap
 
