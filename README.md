@@ -67,6 +67,8 @@ This is a prototype for a static portfolio website.
 ### Portraits
 
 * apply height 100% on all otems except the first for homogenized size
+* make the picture pop when clicked on it
+* Size problem on some main images
 
 ### Snap
 
@@ -78,5 +80,6 @@ This is a prototype for a static portfolio website.
 * Carousel: stuck at last item (fix number of button for number of slides), and not sliding one by one
 
 * Project and career selection centered based on viewport (like logo on main index)?
+
 
 
