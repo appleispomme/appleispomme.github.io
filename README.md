@@ -76,8 +76,7 @@ This is a prototype for a static portfolio website.
 
 * spacing between sections (after section title)
 * Alignment pictures in Soje
-* Light: spacing
-* Carousel: stuck at last item (fix number of button for number of slides), and not sliding one by one
+
 
 * Project and career selection centered based on viewport (like logo on main index)?
 
