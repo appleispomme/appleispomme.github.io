@@ -57,6 +57,12 @@
     text-decoration: none;
 }
 
+.caption {
+    color: grey;
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+}
+
 p {
     font-family: 'Roboto', sans-serif;
 }
