@@ -80,5 +80,7 @@ This is a prototype for a static portfolio website.
 
 * Project and career selection centered based on viewport (like logo on main index)?
 
+*
+
 
 
