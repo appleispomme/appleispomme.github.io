@@ -13,6 +13,8 @@ This is a prototype for a static portfolio website.
 
 ## General
 
+* Do not show full size / do not adapt to full view on Mobile an tablet?
+
 * lazyload for gallery and heavy photography pages
     * https://github.com/verlok/vanilla-lazyload
 * Ask Mihyun for favicon: 

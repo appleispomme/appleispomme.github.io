@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+  .small_image {
+    max-width: 50px;
+    max-height: 50px;
+    object-fit: contain;
+  }
+
+  #image-1 {
+    position: absolute;
+    top: 70%;
+    left: 15%;
+    opacity: 1;
+    z-index: 3;
+  }
+
+  #image-2 {
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    opacity: 1;
+    z-index: 3;
+  }
+
+  /* Graph */
+  #sketch-holder-graph {
+    margin: none;
+    padding: none;
+  }
+
+  /* Buttons */
+  #button-0 {
+    /* Dance */
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    opacity: 1;
+    z-index: 3;
+    width: auto;
+    transform: translate(-50%, -50%);
+  }
+
+
+
+  #button-1 {
+    /* Plant */
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    opacity: 1;
+    z-index: 3;
+    width: auto;
+    transform: translate(-50%, -50%);
+  }
+
+  #button-2 {
+    /* Cqt */
+    position: absolute;
+    top: 70%;
+    left: 27.5%;
+    opacity: 1;
+    z-index: 3;
+    width: auto;
+    transform: translate(-50%, -50%);
+  }
+
+  #button-3 {
+    position: absolute;
+    top: 80%;
+    left: 35%;
+    opacity: 1;
+    z-index: 3;
+    width: auto;
+    transform: translate(-50%, -50%);
+  }
+
+  #button-4 {
+    /* Scary woman */
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    opacity: 1;
+    z-index: 3;
+    width: auto;
+    transform: translate(-50%, -50%);
+  }
+
+  #button-5 {
+    /* Mountain*/
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    opacity: 1;
+    z-index: 3;
+    width: auto;
+    transform: translate(-50%, -50%);
+  }
+
+  #button-6 {
+    /* Scooter */
+    position: absolute;
+    top: 80%;
+    left: 45%;
+    opacity: 1;
+    z-index: 3;
+    width: auto;
+    transform: translate(-50%, -50%);
+  }
+
+  #button-7 {
+    position: absolute;
+    top: 75%;
+    left: 45%;
+    opacity: 1;
+    z-index: 2;
+    width: auto;
+    transform: translate(-50%, -50%);
+  }
+
+  #button-8 {
+    /* pink Truck*/
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    opacity: 1;
+    z-index: 4;
+    width: auto;
+    transform: translate(-50%, -50%);
+  }
+
+  #button-9 {
+    /* Women in field*/
+    position: absolute;
+    top: 80%;
+    left: 55%;
+    opacity: 1;
+    z-index: 5;
+    width: auto;
+    transform: translate(-50%, -50%);
+  }
+
+  #button-10 {
+    /* Man laughing*/
+    position: absolute;
+    top: 80%;
+    left: 60%;
+    opacity: 1;
+    z-index: 3;
+    width: auto;
+    transform: translate(-50%, -50%);
+  }
+
+  #button-11 {
+    /* Field */
+    position: absolute;
+    top: 75%;
+    left: 57%;
+    opacity: 1;
+    z-index: 3;
+    width: auto;
+    transform: translate(-50%, -50%);
+  }
+
+  #button-12 {
+    /* Fix ear*/
+    position: absolute;
+    top: 80%;
+    left: 65%;
+    opacity: 1;
+    z-index: 3;
+    width: auto;
+    transform: translate(-50%, -50%);
+  }
+
+  #button-13 {
+    /* Doggo */
+    position: absolute;
+    top: 80%;
+    left: 80%;
+    opacity: 1;
+    z-index: 3;
+    width: auto;
+    transform: translate(-50%, -50%);
+  }
+
+  #button-14 {
+    /* Woman on sofa */
+    position: absolute;
+    top: 60%;
+    left: 80%;
+    opacity: 1;
+    z-index: 3;
+    width: auto;
+    transform: translate(-50%, -50%);
+  }
+
+  #button-15 {
+    /* Abstract 1 */
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    opacity: 1;
+    z-index: 3;
+    width: auto;
+    transform: translate(-50%, -50%);
+  }
+
+  #button-16 {
+    /* Kavinsky */
+    position: absolute;
+    top: 40%;
+    left: 80%;
+    opacity: 1;
+    z-index: 3;
+    width: auto;
+    transform: translate(-50%, -50%);
+  }
+
+  #button-17 {
+    /* Pandas face */
+    position: absolute;
+    top: 80%;
+    left: 85%;
+    opacity: 1;
+    z-index: 2;
+    width: auto;
+    transform: translate(-50%, -50%);
+  }
+
+  #button-18 {
+    /* Flowers */
+    position: absolute;
+    top: 70%;
+    left: 82.5%;
+    opacity: 1;
+    z-index: 1;
+    width: auto;
+    transform: translate(-50%, -50%);
+  }
+
+  #button-19 {
+    /* Women dance */
+    position: absolute;
+    top: 80%;
+    left: 85%;
+    opacity: 1;
+    z-index: 3;
+    width: auto;
+    transform: translate(-50%, -50%);
+  }
+
+  #button-20 {
+    position: absolute;
+    top: 75%;
+    left: 90%;
+    opacity: 1;
+    z-index: 3;
+    width: auto;
+    transform: translate(-50%, -50%);
+  }
+
+  #button-21 {
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    opacity: 1;
+    z-index: 3;
+    width: auto;
+    transform: translate(-50%, -50%);
+  }
+
+  /* #button-1 {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    opacity: 1;
+    z-index: 3;
+    width: auto;
+    padding: none;
+    margin: none;
+    vertical-align: middle;
+    transform: translate(-50%, -50%);
+  } */
+</style>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aesthetic satisfaction - All about Pomme</title>
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/my_stylesheet.css">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- Header -->
+  <div id="header"></div>
+
+  <!-- Title -->
+  <div class="row">
+    <div class="slide-up" style="height: 10em;">
+      <div class="inner">
+        <h1 class="page-title">Aesthetic satisfaction</h1>
+        <h2 class="page-subtitle">Simple to complex</h2>
+      </div>
+    </div>
+  </div>
+
+  <!-- Draw the graph -->
+  <div class="container" style="position: relative; ">
+    <div col="row" id="test-container">
+      <div id="sketch-holder-graph"></div>
+
+      <!-- Button trigger modal -->
+      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal-0" id="button-0">
+        <img src="./graph/images/0.jpg" class="small_image">
+      </button>
+
+      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal-1" id="button-1">
+        <img src="./graph/images/1.jpg" class="small_image">
+      </button>
+
+      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal-2" id="button-2">
+        <img src="./graph/images/2.jpg" class="small_image">
+      </button>
+
+      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal-3" id="button-3">
+        <img src="./graph/images/3.jpg" class="small_image">
+      </button>
+
+      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal-4" id="button-4">
+        <img src="./graph/images/4.jpg" class="small_image">
+      </button>
+
+      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal-5" id="button-5">
+        <img src="./graph/images/5.jpg" class="small_image">
+      </button>
+
+      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal-6" id="button-6">
+        <img src="./graph/images/6.jpg" class="small_image">
+      </button>
+
+      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal-7" id="button-7">
+        <img src="./graph/images/7.jpg" class="small_image">
+      </button>
+
+      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal-8" id="button-8">
+        <img src="./graph/images/8.jpg" class="small_image">
+      </button>
+
+      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal-9" id="button-9">
+        <img src="./graph/images/9.jpg" class="small_image">
+      </button>
+
+      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal-10" id="button-10">
+        <img src="./graph/images/10.jpg" class="small_image">
+      </button>
+
+      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal-11" id="button-11">
+        <img src="./graph/images/11.jpg" class="small_image">
+      </button>
+
+      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal-12" id="button-12">
+        <img src="./graph/images/12.jpg" class="small_image">
+      </button>
+
+      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal-13" id="button-13">
+        <img src="./graph/images/13.jpg" class="small_image">
+      </button>
+
+      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal-14" id="button-14">
+        <img src="./graph/images/14.jpg" class="small_image">
+      </button>
+
+      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal-15" id="button-15">
+        <img src="./graph/images/15.jpg" class="small_image">
+      </button>
+
+      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal-16" id="button-16">
+        <img src="./graph/images/16.jpg" class="small_image">
+      </button>
+
+      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal-17" id="button-17" s>
+        <img src="./graph/images/17.jpg" class="small_image">
+      </button>
+
+      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal-18" id="button-18">
+        <img src="./graph/images/18.jpg" class="small_image">
+      </button>
+
+      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal-19" id="button-19">
+        <img src="./graph/images/19.jpg" class="small_image">
+      </button>
+
+      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal-20" id="button-20">
+        <img src="./graph/images/20.jpg" class="small_image">
+      </button>
+
+      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal-21" id="button-21">
+        <img src="./graph/images/21.jpg" class="small_image">
+      </button>
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+  <!-- Add annotations -->
+
+  <!-- 
+  # ==========================================================================
+      Modal: images
+  # ==========================================================================    
+  -->
+
+  <!-- Modal 0 -->
+  <div class="modal fade" id="modal-0" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="row">
+          <div class="col">
+            <img src="./graph/images/0.jpg" class="img-fluid">
+          </div>
+          <div class="col">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 1 -->
+  <div class="modal fade" id="modal-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="row">
+          <div class="col">
+            <img src="./graph/images/1.jpg" class="img-fluid">
+          </div>
+          <div class="col">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2 -->
+  <div class="modal fade" id="modal-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="row">
+          <div class="col">
+            <img src="./graph/images/2.jpg" class="img-fluid">
+          </div>
+          <div class="col">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3 -->
+  <div class="modal fade" id="modal-3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="row">
+          <div class="col">
+            <img src="./graph/images/3.jpg" class="img-fluid">
+          </div>
+          <div class="col">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4 -->
+  <div class="modal fade" id="modal-4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="row">
+          <div class="col">
+            <img src="./graph/images/4.jpg" class="img-fluid">
+          </div>
+          <div class="col">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 5 -->
+  <div class="modal fade" id="modal-5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="row">
+          <div class="col">
+            <img src="./graph/images/5.jpg" class="img-fluid">
+          </div>
+          <div class="col">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 6 -->
+  <div class="modal fade" id="modal-6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="row">
+          <div class="col">
+            <img src="./graph/images/6.jpg" class="img-fluid">
+          </div>
+          <div class="col">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 7 -->
+  <div class="modal fade" id="modal-7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="row">
+          <div class="col">
+            <img src="./graph/images/7.jpg" class="img-fluid">
+          </div>
+          <div class="col">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 8 -->
+  <div class="modal fade" id="modal-8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="row">
+          <div class="col">
+            <img src="./graph/images/8.jpg" class="img-fluid">
+          </div>
+          <div class="col">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 9 -->
+  <div class="modal fade" id="modal-9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="row">
+          <div class="col">
+            <img src="./graph/images/9.jpg" class="img-fluid">
+          </div>
+          <div class="col">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 10 -->
+  <div class="modal fade" id="modal-10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="row">
+          <div class="col">
+            <img src="./graph/images/10.jpg" class="img-fluid">
+          </div>
+          <div class="col">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 11 -->
+  <div class="modal fade" id="modal-11" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="row">
+          <div class="col">
+            <img src="./graph/images/11.jpg" class="img-fluid">
+          </div>
+          <div class="col">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 12 -->
+  <div class="modal fade" id="modal-12" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="row">
+          <div class="col">
+            <img src="./graph/images/12.jpg" class="img-fluid">
+          </div>
+          <div class="col">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 13 -->
+  <div class="modal fade" id="modal-13" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="row">
+          <div class="col">
+            <img src="./graph/images/13.jpg" class="img-fluid">
+          </div>
+          <div class="col">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 14 -->
+  <div class="modal fade" id="modal-14" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="row">
+          <div class="col">
+            <img src="./graph/images/14.jpg" class="img-fluid">
+          </div>
+          <div class="col">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 15 -->
+  <div class="modal fade" id="modal-15" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="row">
+          <div class="col">
+            <img src="./graph/images/15.jpg" class="img-fluid">
+          </div>
+          <div class="col">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 16 -->
+  <div class="modal fade" id="modal-16" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="row">
+          <div class="col">
+            <img src="./graph/images/16.jpg" class="img-fluid">
+          </div>
+          <div class="col">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 17 -->
+  <div class="modal fade" id="modal-17" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="row">
+          <div class="col">
+            <img src="./graph/images/17.jpg" class="img-fluid">
+          </div>
+          <div class="col">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 18 -->
+  <div class="modal fade" id="modal-18" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="row">
+          <div class="col">
+            <img src="./graph/images/18.jpg" class="img-fluid">
+          </div>
+          <div class="col">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 19 -->
+  <div class="modal fade" id="modal-19" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="row">
+          <div class="col">
+            <img src="./graph/images/19.jpg" class="img-fluid">
+          </div>
+          <div class="col">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 20 -->
+  <div class="modal fade" id="modal-20" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="row">
+          <div class="col">
+            <img src="./graph/images/20.jpg" class="img-fluid">
+          </div>
+          <div class="col">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 21 -->
+  <div class="modal fade" id="modal-21" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="row">
+          <div class="col">
+            <img src="./graph/images/21.jpg" class="img-fluid">
+          </div>
+          <div class="col">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- 
+  # ==========================================================================
+      Modal: enlarge image
+  # ==========================================================================    
+  -->
+
+  <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <!-- <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div> -->
+        <div class="modal-body">
+          <img src="" class="imagepreview img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 
+  # ==========================================================================
+      Scripts
+  # ==========================================================================    
+  -->
+
+  <!-- Javascript for header -->
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <!-- p5js for art -->
+  <script src="./apple/libraries/p5.min.js"></script>
+  <script src="./graph/sketch.js"></script>
+
+
+  <script>
+    $(function () {
+      $("#header").load("/header.html");
+      // $("#footer").load("footer.html");
+    }); 
+  </script>
+
+
+
+</body>
+
+
+</html>
