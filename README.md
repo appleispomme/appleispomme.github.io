@@ -6,12 +6,18 @@ This is a prototype for a static portfolio website.
 
 ## High prio
 
+* Confirm on ipad and other browser
+* Feedback for Snap
+* Carousel Soje
 * Do carousel
 * Do gallery
     * https://codepen.io/vajkri/pen/opbyvN
     * Now ok but modal not well centered
 
 ## General
+
+* implement modal images for aesthetic in better way
+    * https://www.w3schools.com/howto/howto_css_modal_images.asp
 
 * Do not show full size / do not adapt to full view on Mobile an tablet?
 
@@ -37,7 +43,11 @@ This is a prototype for a static portfolio website.
 
 ## About Pomme
 
+OK
+
 ## Projects
+
+* Check if 2x2 is ok for honey + what to do about the simple-complex page.
 
 ### Soje
 
@@ -48,9 +58,19 @@ This is a prototype for a static portfolio website.
 
 ### Light
 
+OK
+
 ### Tea-break
 
+OK
+
+### Apple
+
+* Check if caption/instruction is ok
+
 ## Career
+
+* Issue on iPad?
 
 ### Journalism
 
@@ -60,8 +80,7 @@ This is a prototype for a static portfolio website.
 
 ### Brand manager
 
-* Carousel Branded contents for SNS channel
-* Mamorime too big
+* Check Mamorime
 
 ## Photography
 

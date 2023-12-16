@@ -22,7 +22,7 @@
         backdrop-filter: blur(5px);
     } */
 
-    @media (max-width: 767.98px) {
+    @media (max-width: 949.98px) {
 
         .largeNavbar {
             display: none;
@@ -63,7 +63,8 @@
     }
 
 
-    @media (min-width: 767.98px) {
+    /* @media (min-width: 767.98px) { */
+    @media (min-width: 949.98px) {
         .largeNavbar {
             display: block;
         }
@@ -78,18 +79,18 @@
 
     <nav class="navbar navbar-expand fixed-top">
         <div class="container-fluid">
+
             <!-- Logo -->
             <a class="navbar-brand" href="/index.html">
                 <img src="/images/logo_banner.png" alt="Logo" height="30" class="d-inline-block align-text-top">
             </a>
-            <!-- Buttons -->
-            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button> -->
-            <!-- Menu -->
+            <!-- <a class="navbar-brand" href="/index.html">
+                <img src="/images/logo_banner.png" alt="Logo" height="30">
+            </a> -->
+
+            <!-- Items -->
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav justify">
+                <ul class="navbar-nav justify-content-center">
                     <li class="nav-item">
                         <a class="nav-link" href="/about_pomme.html">About Pomme</a>
                     </li>
@@ -130,6 +131,14 @@
                     </li>
                 </ul>
             </div>
+
+            <!-- Items -->
+            <a class="navbar-brand" href="/index.html" style="visibility: hidden;">
+                <img src="/images/logo_banner.png" alt="Logo" height="30" class="d-inline-block align-text-top">
+            </a>
+            <!-- <a href="/index.html" style="border-style: solid; border-color: red; visibility: hidden;">
+                <img src="/images/logo_banner.png" alt="Logo" height="30">
+            </a> -->
         </div>
     </nav>
 </div>
@@ -141,9 +150,13 @@
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
             <!-- Logo -->
+            <!-- <a class="navbar-brand" href="/index.html">
+                <img src="/images/logo_banner.png" alt="Logo" height="30">
+            </a> -->
             <a class="navbar-brand" href="/index.html">
                 <img src="/images/logo_banner.png" alt="Logo" height="30" class="d-inline-block align-text-top">
             </a>
+
             <!-- Buttons -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
