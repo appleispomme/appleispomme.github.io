@@ -18,6 +18,8 @@ This is a prototype for a static portfolio website.
 
 ## General
 
+* Check last-container (white space) on all pages
+
 * implement modal images for aesthetic in better way
     * https://www.w3schools.com/howto/howto_css_modal_images.asp
 
@@ -82,13 +84,12 @@ OK
 
 ### Brand manager
 
-* Check Mamorime smaller
+OK
 
 ## Photography
 
 
 ### Portraits
-
 
 * apply height 100% on all otems except the first for homogenized size
 * make the picture pop when clicked on it
