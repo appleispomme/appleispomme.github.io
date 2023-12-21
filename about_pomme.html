@@ -2,6 +2,12 @@
 <html lang="en">
 
 <style>
+    #main-text {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+
     img.cropped {
         width: 100%;
         -webkit-border-radius: 200px;
@@ -18,6 +24,11 @@
     .appear .inner {
         animation: appear 1.5s;
     }
+
+
+
+
+
 
     @keyframes appear {
         from {
@@ -59,14 +70,14 @@
     </script>
 </head>
 
-<div id="header"></div>
+
 
 <body>
     <!-- Header -->
-
+    <div id="header"></div>
 
     <!-- Rest of the content -->
-    <div class="container">
+    <div class="container last-container">
         <div class="row">
 
             <!-- Picture, slide left to right -->
@@ -81,7 +92,7 @@
             </div>
 
             <!-- Text, slide bottom to top (apply slide up everywhere)-->
-            <div class="col-md">
+            <div class="col-lg">
                 <div class="slide-up">
                     <div class="inner" style="animation: slide-up 1.5s;">
 
@@ -95,7 +106,7 @@
                             Married with 🇫🇷<br>
                             📍 Currently 🇳🇱<br>
                         </p>
-                        <p style="text-align: justify;">
+                        <p id="main-text">
                             I am a driven and creative marketing professional focused on contents & PR.
                             Through my wide range of experience, I developed a large skill set, from photography and
                             design to data analytics, allowing me to be

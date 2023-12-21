@@ -24,6 +24,11 @@
 # ==============================================================================
 */
 
+.last-container {
+    padding-bottom: 10vh;
+    /* White padding at bottom of page */
+}
+
 .page-title {
     text-align: center;
     font-family: 'Cormorant Garamond', serif;

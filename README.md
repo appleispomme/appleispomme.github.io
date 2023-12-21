@@ -7,8 +7,10 @@ This is a prototype for a static portfolio website.
 ## High prio
 
 * Confirm on ipad and other browser
-* Feedback for Snap
 * Carousel Soje
+
+* Feedback for Snap
+
 * Do carousel
 * Do gallery
     * https://codepen.io/vajkri/pen/opbyvN
@@ -26,7 +28,6 @@ This is a prototype for a static portfolio website.
 * Ask Mihyun for favicon: 
     * https://www.w3schools.com/html/html_favicon.asp
 * Discuss spacing title, etc.
-* center of header
 * Anti-flickering stuff
 * Spacing below title and between rows (a bit small for now, see "Light")
 * Animations on all titles
@@ -43,7 +44,7 @@ This is a prototype for a static portfolio website.
 
 ## About Pomme
 
-OK
+* Smaller column width for text (just on desktop?) -> CHECK
 
 ## Projects
 
@@ -58,7 +59,7 @@ OK
 
 ### Light
 
-OK
+Padding BOTTOM
 
 ### Tea-break
 
@@ -74,18 +75,20 @@ OK
 
 ### Journalism
 
+* White space at the bottom of the page
 * Make tules of layout bigger
 * Rules of newspaper aligned vertically top or centered? 
 * Discuss padding in sub-title categories
 
 ### Brand manager
 
-* Check Mamorime
+* Check Mamorime smaller
 
 ## Photography
 
 
 ### Portraits
+
 
 * apply height 100% on all otems except the first for homogenized size
 * make the picture pop when clicked on it
