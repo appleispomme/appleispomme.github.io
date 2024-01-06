@@ -2,6 +2,8 @@
 <html lang="en">
 
 <style>
+    /* Logo  properties */
+
     .main-logo {
         position: fixed;
         top: 50%;
@@ -12,8 +14,6 @@
         z-index: 10;
     }
 
-    /* Slide up logo */
-
     .slide-up-logo {
         height: auto;
         overflow: hidden;
@@ -23,6 +23,19 @@
         animation: slide-up-logo 1s;
         margin-top: 0%;
     }
+
+    /* If image is active or not */
+
+    .reveal {
+        position: relative;
+        opacity: 0;
+    }
+
+    .reveal.active {
+        opacity: 1;
+    }
+
+    /* Slide up logo */
 
     @keyframes slide-up-logo {
         from {
@@ -43,7 +56,7 @@
         width: 100%;
     }
 
-    .slide-left-to-right-head .inner {
+    .active.slide-left-to-right-head .inner {
         animation: slide-left-to-right-head 1.5s;
     }
 
@@ -66,7 +79,7 @@
         width: 100%;
     }
 
-    .slide-right-to-left-apple .inner {
+    .active.slide-right-to-left-apple .inner {
         animation: slide-right-to-left-apple 1.5s;
     }
 
@@ -89,19 +102,43 @@
         width: 100%;
     }
 
-    .flicker-naked .inner {
+    .active.flicker-naked .inner {
         animation: flicker-naked 0.75s;
     }
 
     @keyframes flicker-naked {
         from {
             rotate: -30deg;
+            opacity: 0;
         }
 
         to {
             rotate: 0deg;
+            opacity: 1;
+        }
+    }
+
+    /* Bottom image slide  up*/
+
+    .slide-up-bottom-img {
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .active.slide-up-bottom-img .inner {
+        animation: slide-up-bottom-img 1.5s;
+    }
+
+    @keyframes slide-up-bottom-img {
+        0% {
+            transform: translateY(150px);
+            opacity: 0;
         }
 
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
     }
 </style>
 
@@ -134,32 +171,49 @@
     <div class="row">
         <div class="col">
             <div class="row">
-                <div class="slide-left-to-right-head">
+                <div class="reveal slide-left-to-right-head">
                     <img class="inner img-fluid" src="images/main_index/left_head.png">
                 </div>
             </div>
             <div class="row">
-                <div class="flicker-naked">
+                <div class="reveal flicker-naked">
                     <img class="inner img-fluid align-self-start" src="images/main_index/left_naked.png">
                 </div>
             </div>
         </div>
         <div class="col my-auto">
-            <div class="slide-right-to-left-apple">
+            <div class="reveal slide-right-to-left-apple">
                 <img class="inner img-fluid" src="images/main_index/right_apple.png" style="margin-left: 40%;">
             </div>
         </div>
-        <img class="row img-fluid " src="images/main_index/bottom_img.png">
+    </div>
+    <div class="row">
+        <div class="reveal slide-up-bottom-img">
+            <img class="inner img-fluid" src="images/main_index/bottom_img.png">
+        </div>
     </div>
 
+    <!-- Script for image reveal on scroll -->
+    <script>
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            var windowHeight = window.innerHeight;
+            var elementVisible = 150;
 
-
-
-
-
-
-
-
+            for (var i = 0; i < reveals.length; i++) {
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                } else {
+                    reveals[i].classList.remove("active");
+                }
+            }
+        }
+        // Check what to show at load 
+        document.addEventListener('DOMContentLoaded', reveal());
+        // Re-check when we scroll
+        window.addEventListener("scroll", reveal);
+    </script>
 </body>
 
 </html>

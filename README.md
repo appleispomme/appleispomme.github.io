@@ -6,10 +6,10 @@ This is a prototype for a static portfolio website.
 
 ## High prio
 
-* Confirm on ipad and other browser
 * Carousel Soje
-
 * Feedback for Snap
+* Confirm on ipad and other browser
+
 
 * Do carousel
 * Do gallery
