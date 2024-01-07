@@ -31,7 +31,7 @@ let distances;         // Future 2D array, storing the distances
 function setup() {
   // Get size of parent div
   var canvasDiv = document.getElementById("test-container");
-  total_width = 0.5 * canvasDiv.offsetWidth;
+  total_width = 0.8 * canvasDiv.offsetWidth;
   total_height = total_width;
 
   console.log(canvasDiv.offsetWidth);
