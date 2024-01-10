@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Oswald&family=Roboto&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Oswald&family=Roboto&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=JetBrains+Mono&family=Oswald&family=Roboto&display=swap');
 
 /*
 # ==============================================================================
@@ -40,6 +41,22 @@
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-size: 1.5em;
+}
+
+.tldr {
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+    margin-bottom: 50px;
+    padding-top: 1em;
+    margin-top: 1em;
+}
+
+.tldr p {
+    font-family: 'JetBrains Mono';
+}
+
+.keypoint {
+    font-weight: bolder;
 }
 
 .section-title {

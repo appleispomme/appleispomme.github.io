@@ -164,70 +164,87 @@
 </head>
 
 <body>
-  <!-- Header -->
-  <div id="header"></div>
+  <div class="container last-container">
+    <!-- Header -->
+    <div id="header"></div>
 
-  <!-- Title -->
-  <div class="row">
-    <div class="slide-up" style="height: 10em;">
-      <div class="inner">
-        <h1 class="page-title">Aesthetic satisfaction</h1>
-        <h2 class="page-subtitle">Simple to complex</h2>
+    <!-- Title -->
+    <div class="row">
+      <div class="slide-up" style="height: 10em;">
+        <div class="inner">
+          <h1 class="page-title">Aesthetic satisfaction</h1>
+          <h2 class="page-subtitle">Simple to complex</h2>
+        </div>
+      </div>
+    </div>
+
+    <!-- tl;dr -->
+    <div class="row tldr">
+      <p>
+        One day, I saw a research data showing that a person's aesthetic satisfaction is related to the fractal index.
+        The theory is that humans feel the most dramatic beauty when the fractal index is 1.4.
+        In the East, on the contrary, there is saying "the beauty of blank space" which is a concept that has been
+        passed down for a long time that the more it is emptied and reduced, the more beautiful it is.
+        I was able to empathiz with both of these two conflicting concepts, and I organized the cased that fit those
+        ideas into a graph.
+      </p>
+      <p>
+        N.B. Only works drawn on a flat surface are represented.
+      </p>
+    </div>
+    <!-- Draw the graph -->
+    <div class="container" style="position: relative; ">
+      <div col="row" id="test-container">
+        <div id="sketch-holder-graph"></div>
+
+        <img src="./graph/images/0.jpg" class="button-general small_image" data-bs-toggle="modal"
+          data-bs-target="#modal-0" id="button-0">
+        <img src="./graph/images/1.jpg" class="button-general small_image" data-bs-toggle="modal"
+          data-bs-target="#modal-1" id="button-1">
+        <img src="./graph/images/2.jpg" class="button-general small_image" data-bs-toggle="modal"
+          data-bs-target="#modal-2" id="button-2">
+        <img src="./graph/images/3.jpg" class="button-general small_image" data-bs-toggle="modal"
+          data-bs-target="#modal-3" id="button-3">
+        <img src="./graph/images/4.jpg" class="button-general small_image" data-bs-toggle="modal"
+          data-bs-target="#modal-4" id="button-4">
+        <img src="./graph/images/5.jpg" class="button-general small_image" data-bs-toggle="modal"
+          data-bs-target="#modal-5" id="button-5">
+        <img src="./graph/images/6.jpg" class="button-general small_image" data-bs-toggle="modal"
+          data-bs-target="#modal-6" id="button-6">
+        <img src="./graph/images/7.jpg" class="button-general small_image" data-bs-toggle="modal"
+          data-bs-target="#modal-7" id="button-7">
+        <img src="./graph/images/8.jpg" class="button-general small_image" data-bs-toggle="modal"
+          data-bs-target="#modal-8" id="button-8">
+        <img src="./graph/images/9.jpg" class="button-general small_image" data-bs-toggle="modal"
+          data-bs-target="#modal-9" id="button-9">
+        <img src="./graph/images/10.jpg" class="button-general small_image" data-bs-toggle="modal"
+          data-bs-target="#modal-10" id="button-10">
+        <img src="./graph/images/11.jpg" class="button-general small_image" data-bs-toggle="modal"
+          data-bs-target="#modal-11" id="button-11">
+        <img src="./graph/images/12.jpg" class="button-general small_image" data-bs-toggle="modal"
+          data-bs-target="#modal-12" id="button-12">
+        <img src="./graph/images/13.jpg" class="button-general small_image" data-bs-toggle="modal"
+          data-bs-target="#modal-13" id="button-13">
+        <img src="./graph/images/14.jpg" class="button-general small_image" data-bs-toggle="modal"
+          data-bs-target="#modal-14" id="button-14">
+        <img src="./graph/images/15.jpg" class="button-general small_image" data-bs-toggle="modal"
+          data-bs-target="#modal-15" id="button-15">
+        <img src="./graph/images/16.jpg" class="button-general small_image" data-bs-toggle="modal"
+          data-bs-target="#modal-16" id="button-16">
+        <img src="./graph/images/17.jpg" class="button-general small_image" data-bs-toggle="modal"
+          data-bs-target="#modal-17" id="button-17">
+        <img src="./graph/images/18.jpg" class="button-general small_image" data-bs-toggle="modal"
+          data-bs-target="#modal-18" id="button-18">
+        <img src="./graph/images/19.jpg" class="button-general small_image" data-bs-toggle="modal"
+          data-bs-target="#modal-19" id="button-19">
+        <img src="./graph/images/20.jpg" class="button-general small_image" data-bs-toggle="modal"
+          data-bs-target="#modal-20" id="button-20">
+        <img src="./graph/images/21.jpg" class="button-general small_image" data-bs-toggle="modal"
+          data-bs-target="#modal-21" id="button-21">
       </div>
     </div>
   </div>
 
-  <!-- Draw the graph -->
-  <div class="container" style="position: relative; ">
-    <div col="row" id="test-container">
-      <div id="sketch-holder-graph"></div>
-
-      <img src="./graph/images/0.jpg" class="button-general small_image" data-bs-toggle="modal"
-        data-bs-target="#modal-0" id="button-0">
-      <img src="./graph/images/1.jpg" class="button-general small_image" data-bs-toggle="modal"
-        data-bs-target="#modal-1" id="button-1">
-      <img src="./graph/images/2.jpg" class="button-general small_image" data-bs-toggle="modal"
-        data-bs-target="#modal-2" id="button-2">
-      <img src="./graph/images/3.jpg" class="button-general small_image" data-bs-toggle="modal"
-        data-bs-target="#modal-3" id="button-3">
-      <img src="./graph/images/4.jpg" class="button-general small_image" data-bs-toggle="modal"
-        data-bs-target="#modal-4" id="button-4">
-      <img src="./graph/images/5.jpg" class="button-general small_image" data-bs-toggle="modal"
-        data-bs-target="#modal-5" id="button-5">
-      <img src="./graph/images/6.jpg" class="button-general small_image" data-bs-toggle="modal"
-        data-bs-target="#modal-6" id="button-6">
-      <img src="./graph/images/7.jpg" class="button-general small_image" data-bs-toggle="modal"
-        data-bs-target="#modal-7" id="button-7">
-      <img src="./graph/images/8.jpg" class="button-general small_image" data-bs-toggle="modal"
-        data-bs-target="#modal-8" id="button-8">
-      <img src="./graph/images/9.jpg" class="button-general small_image" data-bs-toggle="modal"
-        data-bs-target="#modal-9" id="button-9">
-      <img src="./graph/images/10.jpg" class="button-general small_image" data-bs-toggle="modal"
-        data-bs-target="#modal-10" id="button-10">
-      <img src="./graph/images/11.jpg" class="button-general small_image" data-bs-toggle="modal"
-        data-bs-target="#modal-11" id="button-11">
-      <img src="./graph/images/12.jpg" class="button-general small_image" data-bs-toggle="modal"
-        data-bs-target="#modal-12" id="button-12">
-      <img src="./graph/images/13.jpg" class="button-general small_image" data-bs-toggle="modal"
-        data-bs-target="#modal-13" id="button-13">
-      <img src="./graph/images/14.jpg" class="button-general small_image" data-bs-toggle="modal"
-        data-bs-target="#modal-14" id="button-14">
-      <img src="./graph/images/15.jpg" class="button-general small_image" data-bs-toggle="modal"
-        data-bs-target="#modal-15" id="button-15">
-      <img src="./graph/images/16.jpg" class="button-general small_image" data-bs-toggle="modal"
-        data-bs-target="#modal-16" id="button-16">
-      <img src="./graph/images/17.jpg" class="button-general small_image" data-bs-toggle="modal"
-        data-bs-target="#modal-17" id="button-17">
-      <img src="./graph/images/18.jpg" class="button-general small_image" data-bs-toggle="modal"
-        data-bs-target="#modal-18" id="button-18">
-      <img src="./graph/images/19.jpg" class="button-general small_image" data-bs-toggle="modal"
-        data-bs-target="#modal-19" id="button-19">
-      <img src="./graph/images/20.jpg" class="button-general small_image" data-bs-toggle="modal"
-        data-bs-target="#modal-20" id="button-20">
-      <img src="./graph/images/21.jpg" class="button-general small_image" data-bs-toggle="modal"
-        data-bs-target="#modal-21" id="button-21">
-    </div>
-  </div>
 
 
   <!-- Add annotations -->

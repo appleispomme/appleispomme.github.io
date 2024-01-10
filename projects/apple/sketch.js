@@ -31,7 +31,8 @@ let distances;         // Future 2D array, storing the distances
 function setup() {
   // Get size of parent div
   var canvasDiv = document.getElementById("test-container");
-  total_width = 0.8 * canvasDiv.offsetWidth;
+  total_width = 0.6 * canvasDiv.offsetWidth;
+  // total_width = canvasDiv.offsetWidth;
   total_height = total_width;
 
   console.log(canvasDiv.offsetWidth);
@@ -58,7 +59,8 @@ function setup() {
   img.noStroke();
   // Draw big apple as a mask
   mk = createGraphics(width, height);
-  build_apple(width / 2, height / 2, width / 2, 1.2, 0.15, 0.08, mk);
+  // build_apple(width / 2, height / 2, width / 2, 1.2, 0.15, 0.08, mk);
+  build_apple(width / 2, height / 2, width * 0.5, 1.2, 0.15, 0.08, mk);
 
   // Specify colors included in the gradient
   c = [color(174, 255, 144),

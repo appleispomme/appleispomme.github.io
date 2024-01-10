@@ -5,6 +5,37 @@
     p {
         text-align: justify;
     }
+
+    .lightSlider {
+        padding-top: 10px;
+    }
+
+    .lightSlider li {
+        display: block;
+        float: left;
+        margin-right: 5px;
+        cursor: pointer;
+    }
+
+    .lightSlider img {
+        display: flex;
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        /* --bs-aspect-ratio: 50%; */
+    }
+
+    @media (min-width: 415px) {
+        .lightSlider img {
+            height: 250px;
+        }
+    }
+
+    @media (min-width: 900px) {
+        .lightSlider img {
+            height: 400px;
+        }
+    }
 </style>
 
 <head>
@@ -16,214 +47,564 @@
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <!-- Javascript for header -->
-    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-    <script>
-        $(function () {
-            $("#header").load("/header.html");
-            // $("#footer").load("footer.html");
-        }); 
-    </script>
+    <!-- Stylesheet -->
+    <link type="text/css" rel="stylesheet" href="../lightslider.css" />
 </head>
 
 <body>
     <!-- Header -->
     <div id="header"></div>
 
-    <!-- Rest of the content -->
 
-    <div class="row">
-        <div class="slide-up" style="height: 10em;">
-            <div class=" inner">
-                <h1 class="page-title">Remember: Soje</h1>
-                <h2 class="page-subtitle">Silence tour & Photowalk workshop <br> Nov. 23 </h2>
-            </div>
-        </div>
-    </div>
+    <div class="container" style="padding-top: 0;">
 
-
-    <div class="container">
-        <div class="row">
-            <!-- Images on left of text -->
-            <div class="col-lg">
-                <div class="row">
-                    <img src="/projects/images/remember_soje/soje_poster.jpg" alt="Remember Soje poster" style="width: 100%;
-                    height: auto;">
-                    <p class="caption">Poster of the event</p>
-                </div>
-                <div class="row">
-                    <p>Photos of Soje-dong</p>
-                </div>
-
-            </div>
-            <!-- Main text (on right) -->
-            <div class="col-lg">
-                <div class="row">
-
-                    <div class="col">
-                        <p>
-                            <span
-                                style="color:darkred; font-style: italic; font-size: large; font-weight: bold;">Soje-dong
-                                (소제동)</span> is an old railroad village
-                            behind
-                            Daejeon station. The entire area was on the verge of
-                            disappearing
-                            after the local government marked the area for urban development and people deserted the
-                            area. But
-                            now its
-                            reputation is totally different from the past.
-                        </p>
+        <!-- Rest of the content -->
+        <div class="container last-container">
+            <div class="row">
+                <div class="slide-up" style="height: 10em;">
+                    <div class=" inner">
+                        <h1 class="page-title">Remember: Soje</h1>
+                        <h2 class="page-subtitle">Silence tour & Photowalk workshop <br> Nov. 23 </h2>
                     </div>
                 </div>
+            </div>
 
+            <!-- tl;dr -->
+            <div class="row tldr">
                 <p>
-                    The history of Soje-dong traces back to the Japanese occupation of Korea (1910-1945). At the time,
-                    an important
-                    railroad connected the granaries of Gunsan to Seoul, and Soje-dong was created in the middle of it
-                    to be the
-                    official management office/town. The area was previously occupied by a beautiful lake, “Sojeho lake”
-                    (소제호),
-                    filled
-                    by the Japanese army. The village developed into a prosperous area where many Japanese-style houses
-                    were built
-                    as
-                    the neighborhood grew. However, after the end of the Japanese colonial occupation, many of these
-                    houses were
-                    left
-                    unattended, labelled of “Jeoksan houses” (적산가옥), negative heritage, and seen as a reminder of a
-                    painful time. As
-                    such, the rich village, where the Japanese army once lived, turned into an area where people were
-                    reluctant to
-                    live
-                    in. The local government announced a plan to rebuild the entire neighborhood and people left one by
-                    one. The
-                    development plan never happened and the area turned into a slum.
+                    <span class="keypoint">Trigger:</span>
+                    Due to real estate speculation and the tendency of
+                    Koreans to prefer new things, it is confirmed that the entire
+                    village, which contains memories of my father and me and is
+                    valuable as a negative heritage is becoming a ghost town.
                 </p>
                 <p>
-                    For some, it is just a neighborhood, but I am personally connected to it. It is the place where my
-                    father had to
-                    work from the young age of 14, due to poverty. He still hates that area. But to me, as a 20-year-old
-                    with a
-                    passion
-                    for photography, Soje-dong was a diamond in the rough, and, despite my father’s disapproval, I
-                    visited it three
-                    times a week.
-
-                    The Daejeon city government made various attempts to revigorate the neighborhood, such as offering
-                    artist
-                    residencies, commissioning mural paintings, and trying to turn it into an attractive cultural
-                    neighborhood. All
-                    the
-                    attempts failed, and urban redevelopment threatened once more the old village.
+                    <span class="keypoint">Solution:</span>
+                    In collaboration with startups in charge of local businesses, we tried to convey the value of the
+                    neighborhood
+                    by attracting the attention of people in interested in local government and culture. We traveled
+                    around
+                    the old city with an analog camera and tried to leave a lasting impression onf each person.
                 </p>
-
                 <p>
-                    I did not want to let this town disappear. It was where I practiced photography since the first time
-                    I held a
-                    camera
-                    and the place that made me understand my usually silent father. I could not let this neighborhood be
-                    forgotten,
-                    and
-                    that is why I started this project.
-
-                    I met with a startup CEO, who held local marketing events, and shared my ideas with him on how to
-                    show the true
-                    value of Soje-dong. In collaboration with an event company, I designed a Silent Tour to promote the
-                    area. I
-                    would
-                    guide people wearing headphones, telling them the history of the village, opening up about my
-                    father’s story,
-                    playing nostalgic music, and reading poetry, while showing them all the secret views and hidden gems
-                    of
-                    Soje-dong. I
-                    became the docent and guardian of this old neighborhood.
-
-                    We walked these streets where you can feel the weight of time and captured these anachronic moments
-                    with my film
-                    camera. At the end of the tour, I would lead them to a local café located in an old bed and
-                    breakfast from the
-                    Japanese colonial time, reflecting on the experience and the new perspective on the neighborhood.
-                </p>
-
-                <p>
-                    These days, with the resurgent interest in vintage and retro-aesthetic, many turned their attention
-                    toward
-                    Soje-dong
-                    and what was left of its historical buildings. Unfortunately, this attention is superficial and
-                    buildings have
-                    been
-                    indiscriminately turned into cafés and gifts shops without care, damaging the buildings with
-                    condensation and
-                    mold.
-                    This newfound interest is propelled by private companies, not grass-root or local movements, pushing
-                    for
-                    gentrification and short term-profit. Therefore, the neighborhood is endangered once again, as it is
-                    getting
-                    squeezed of its value, and may turn back into a slum as trendy cafés already starts to closes as
-                    fast as they
-                    opened.
-
-                    Soje-dong survives on a fine balance. From a complicated history, to governmental mismanagement and
-                    damaging
-                    attention due to trends, how can we protect this neighborhood and coexist with the community?
+                    <span class="keypoint">Impact:</span>
+                    In line with Korea's trend of Newtro's popularity, more and more people visited the area, more
+                    magazines
+                    and articles focused on the value of the neighborhood which was planned to be destroyed, and the
+                    demolition was canceled.
+                    Moreover, the road maintenance project which had been neglected and turning into a slum, was
+                    completed.
                 </p>
             </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <img class="img-fluid" src="/projects/images/remember_soje/soje_map.png" alt="Soje map">
-            </div>
-            <div class="col">
-                <div class="row">
-                    <p class="caption">
-                        <span style="font-style: normal;">◀</span> The map for "Hold me in your eyes" event. (left) <br>
 
-                        <span style="font-style: normal;">▼</span> The old map before Japanese army filled beautiful
-                        lake-Soje (down, 1918, Government complex
-                        Daejeon)
+            <div class="row">
+                <!-- Images on left of text -->
+                <div class="col-lg-6">
+                    <div class="row">
+                        <img src="/projects/images/remember_soje/soje_poster.jpg" alt="Remember Soje poster" style="width: 100%;
+                        height: auto;">
+                        <p class="caption">Poster of the event</p>
+
+                    </div>
+                    <div class="row">
+                        <div class="mx-auto" style="text-align: center;">
+                            <!-- Images -->
+                            <div class="col my-auto" style="text-align: center;">
+                                <a href="#responsive" class="pop">
+                                    <!-- <img class="img-fluid" src="/photography/images/snap/nostalgia_fantasia/1_000025 (2).JPG" /> -->
+                                    <img class="img-fluid" src="/projects/images/remember_soje/carousel/22390003.jpg" />
+                                </a>
+                            </div>
+
+                            <div class="row">
+                                <ul id="lightSlider-soje" class="lightSlider">
+                                    <li class="ratio" style="--bs-aspect-ratio: 133%;">
+                                        <a href="#responsive" class="pop">
+                                            <img class="img-fluid"
+                                                src="/projects/images/remember_soje/carousel/22390001.jpg" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#responsive" class="pop">
+                                            <img class="img-fluid"
+                                                src=/projects/images/remember_soje/carousel/22390002.jpg />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#responsive" class="pop">
+                                            <img class="img-fluid"
+                                                src=/projects/images/remember_soje/carousel/22390003.jpg />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#responsive" class="pop">
+                                            <img class="img-fluid"
+                                                src=/projects/images/remember_soje/carousel/22390004.jpg />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#responsive" class="pop">
+                                            <img class="img-fluid"
+                                                src=/projects/images/remember_soje/carousel/22390005.jpg />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#responsive" class="pop">
+                                            <img class="img-fluid"
+                                                src=/projects/images/remember_soje/carousel/22390006.jpg />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#responsive" class="pop">
+                                            <img class="img-fluid"
+                                                src=/projects/images/remember_soje/carousel/22390007.jpg />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#responsive" class="pop">
+                                            <img class="img-fluid"
+                                                src=/projects/images/remember_soje/carousel/22390008.jpg />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#responsive" class="pop">
+                                            <img class="img-fluid"
+                                                src=/projects/images/remember_soje/carousel/22390009.jpg />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#responsive" class="pop">
+                                            <img class="img-fluid"
+                                                src=/projects/images/remember_soje/carousel/22390010.jpg />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#responsive" class="pop">
+                                            <img class="img-fluid"
+                                                src=/projects/images/remember_soje/carousel/22390011.jpg />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#responsive" class="pop">
+                                            <img class="img-fluid"
+                                                src=/projects/images/remember_soje/carousel/22390012.jpg />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#responsive" class="pop">
+                                            <img class="img-fluid"
+                                                src=/projects/images/remember_soje/carousel/22390013.jpg />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#responsive" class="pop">
+                                            <img class="img-fluid"
+                                                src=/projects/images/remember_soje/carousel/22390014.jpg />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#responsive" class="pop">
+                                            <img class="img-fluid"
+                                                src=/projects/images/remember_soje/carousel/22390015.jpg />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#responsive" class="pop">
+                                            <img class="img-fluid"
+                                                src=/projects/images/remember_soje/carousel/22390016.jpg />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#responsive" class="pop">
+                                            <img class="img-fluid"
+                                                src=/projects/images/remember_soje/carousel/22390017.jpg />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#responsive" class="pop">
+                                            <img class="img-fluid"
+                                                src=/projects/images/remember_soje/carousel/22390018.jpg />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#responsive" class="pop">
+                                            <img class="img-fluid"
+                                                src=/projects/images/remember_soje/carousel/22390019.jpg />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#responsive" class="pop">
+                                            <img class="img-fluid"
+                                                src=/projects/images/remember_soje/carousel/22390020.jpg />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#responsive" class="pop">
+                                            <img class="img-fluid"
+                                                src=/projects/images/remember_soje/carousel/22390021.jpg />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#responsive" class="pop">
+                                            <img class="img-fluid"
+                                                src=/projects/images/remember_soje/carousel/22390022.jpg />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#responsive" class="pop">
+                                            <img class="img-fluid"
+                                                src=/projects/images/remember_soje/carousel/22390023.jpg />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#responsive" class="pop">
+                                            <img class="img-fluid"
+                                                src=/projects/images/remember_soje/carousel/22390024.jpg />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#responsive" class="pop">
+                                            <img class="img-fluid"
+                                                src=/projects/images/remember_soje/carousel/22390025.jpg />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#responsive" class="pop">
+                                            <img class="img-fluid"
+                                                src=/projects/images/remember_soje/carousel/22390026.jpg />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#responsive" class="pop">
+                                            <img class="img-fluid"
+                                                src=/projects/images/remember_soje/carousel/22390027.jpg />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#responsive" class="pop">
+                                            <img class="img-fluid"
+                                                src=/projects/images/remember_soje/carousel/22390028.jpg />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#responsive" class="pop">
+                                            <img class="img-fluid"
+                                                src=/projects/images/remember_soje/carousel/22390029.jpg />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#responsive" class="pop">
+                                            <img class="img-fluid"
+                                                src=/projects/images/remember_soje/carousel/22390030.jpg />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#responsive" class="pop">
+                                            <img class="img-fluid"
+                                                src=/projects/images/remember_soje/carousel/22390031.jpg />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#responsive" class="pop">
+                                            <img class="img-fluid"
+                                                src=/projects/images/remember_soje/carousel/22390032.jpg />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#responsive" class="pop">
+                                            <img class="img-fluid"
+                                                src=/projects/images/remember_soje/carousel/22390033.jpg />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#responsive" class="pop">
+                                            <img class="img-fluid"
+                                                src=/projects/images/remember_soje/carousel/22390034.jpg />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#responsive" class="pop">
+                                            <img class="img-fluid"
+                                                src=/projects/images/remember_soje/carousel/22390035.jpg />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#responsive" class="pop">
+                                            <img class="img-fluid"
+                                                src=/projects/images/remember_soje/carousel/22390036.jpg />
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Main text (on right) -->
+                <div class="col-lg-6">
+                    <div class="row">
+
+                        <div class="col">
+                            <p>
+                                <span
+                                    style="color:darkred; font-style: italic; font-size: large; font-weight: bold;">Soje-dong
+                                    (소제동)</span> is an old railroad village
+                                behind
+                                Daejeon station. The entire area was on the verge of
+                                disappearing
+                                after the local government marked the area for urban development and people deserted the
+                                area. But
+                                now its
+                                reputation is totally different from the past.
+                            </p>
+                        </div>
+                    </div>
+
+                    <p>
+                        The history of Soje-dong traces back to the Japanese occupation of Korea (1910-1945). At the
+                        time,
+                        an important
+                        railroad connected the granaries of Gunsan to Seoul, and Soje-dong was created in the middle of
+                        it
+                        to be the
+                        official management office/town. The area was previously occupied by a beautiful lake, “Sojeho
+                        lake”
+                        (소제호),
+                        filled
+                        by the Japanese army. The village developed into a prosperous area where many Japanese-style
+                        houses
+                        were built
+                        as
+                        the neighborhood grew. However, after the end of the Japanese colonial occupation, many of these
+                        houses were
+                        left
+                        unattended, labelled of “Jeoksan houses” (적산가옥), negative heritage, and seen as a reminder of a
+                        painful time. As
+                        such, the rich village, where the Japanese army once lived, turned into an area where people
+                        were
+                        reluctant to
+                        live
+                        in. The local government announced a plan to rebuild the entire neighborhood and people left one
+                        by
+                        one. The
+                        development plan never happened and the area turned into a slum.
+                    </p>
+                    <p>
+                        For some, it is just a neighborhood, but I am personally connected to it. It is the place where
+                        my
+                        father had to
+                        work from the young age of 14, due to poverty. He still hates that area. But to me, as a
+                        20-year-old
+                        with a
+                        passion
+                        for photography, Soje-dong was a diamond in the rough, and, despite my father’s disapproval, I
+                        visited it three
+                        times a week.
+
+                        The Daejeon city government made various attempts to revigorate the neighborhood, such as
+                        offering
+                        artist
+                        residencies, commissioning mural paintings, and trying to turn it into an attractive cultural
+                        neighborhood. All
+                        the
+                        attempts failed, and urban redevelopment threatened once more the old village.
+                    </p>
+
+                    <p>
+                        I did not want to let this town disappear. It was where I practiced photography since the first
+                        time
+                        I held a
+                        camera
+                        and the place that made me understand my usually silent father. I could not let this
+                        neighborhood be
+                        forgotten,
+                        and
+                        that is why I started this project.
+
+                        I met with a startup CEO, who held local marketing events, and shared my ideas with him on how
+                        to
+                        show the true
+                        value of Soje-dong. In collaboration with an event company, I designed a Silent Tour to promote
+                        the
+                        area. I
+                        would
+                        guide people wearing headphones, telling them the history of the village, opening up about my
+                        father’s story,
+                        playing nostalgic music, and reading poetry, while showing them all the secret views and hidden
+                        gems
+                        of
+                        Soje-dong. I
+                        became the docent and guardian of this old neighborhood.
+
+                        We walked these streets where you can feel the weight of time and captured these anachronic
+                        moments
+                        with my film
+                        camera. At the end of the tour, I would lead them to a local café located in an old bed and
+                        breakfast from the
+                        Japanese colonial time, reflecting on the experience and the new perspective on the
+                        neighborhood.
+                    </p>
+
+                    <p>
+                        These days, with the resurgent interest in vintage and retro-aesthetic, many turned their
+                        attention
+                        toward
+                        Soje-dong
+                        and what was left of its historical buildings. Unfortunately, this attention is superficial and
+                        buildings have
+                        been
+                        indiscriminately turned into cafés and gifts shops without care, damaging the buildings with
+                        condensation and
+                        mold.
+                        This newfound interest is propelled by private companies, not grass-root or local movements,
+                        pushing
+                        for
+                        gentrification and short term-profit. Therefore, the neighborhood is endangered once again, as
+                        it is
+                        getting
+                        squeezed of its value, and may turn back into a slum as trendy cafés already starts to closes as
+                        fast as they
+                        opened.
+
+                        Soje-dong survives on a fine balance. From a complicated history, to governmental mismanagement
+                        and
+                        damaging
+                        attention due to trends, how can we protect this neighborhood and coexist with the community?
                     </p>
                 </div>
-                <div class="row">
-                    <img src="/projects/images/remember_soje/soje_map_old.png" alt="Soje map old" style="width: 100%;
-                    height: auto;">
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img class="img-fluid" src="/projects/images/remember_soje/soje_map.png" alt="Soje map">
                 </div>
+                <div class="col">
+                    <div class="row">
+                        <p class="caption">
+                            <span style="font-style: normal;">◀</span> The map for "Hold me in your eyes" event. (left)
+                            <br>
 
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <img class="img-fluid" src="/projects/images/remember_soje/soje_photo_old_1.jpg" alt="Soje photo old 1">
-            </div>
-            <div class="col">
-                <img class="img-fluid" src="/projects/images/remember_soje/soje_photo_old_2.jpg" alt="Soje photo old 1">
-            </div>
-        </div>
-        <div class="row">
-            <p class="caption">
-                Photographs of lake Soje before it was buried.
-            </p>
-        </div>
-        <div class="row">
-            <div class="col">
-                <img class="img-fluid" src="/projects/images/remember_soje/soje_portrait.JPG" alt="Soje portrait">
-                <p class="caption">Portrait from 'Soje atelier' which is an old Bed & Breakfast from Japanese colonial
-                    time,
-                    located at Soje.</p>
-            </div>
-            <div class="col">
-                <div class="row">
-                    <img class="img-fluid" src="/projects/images/remember_soje/soje_social_1.jpg" alt="Soje social 1">
-                    <p class="caption">Poster and Instagram post of the event.</p>
+                            <span style="font-style: normal;">▼</span> The old map before Japanese army filled beautiful
+                            lake-Soje (down, 1918, Government complex
+                            Daejeon)
+                        </p>
+                    </div>
+                    <div class="row">
+                        <img src="/projects/images/remember_soje/soje_map_old.png" alt="Soje map old" style="width: 100%;
+                    height: auto;">
+                    </div>
+
                 </div>
-                <div class="row">
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img class="img-fluid" src="/projects/images/remember_soje/soje_photo_old_1.jpg"
+                        alt="Soje photo old 1">
+                </div>
+                <div class="col">
+                    <img class="img-fluid" src="/projects/images/remember_soje/soje_photo_old_2.jpg"
+                        alt="Soje photo old 1">
+                </div>
+            </div>
+            <div class="row">
+                <p class="caption">
+                    Photographs of lake Soje before it was buried.
+                </p>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img class="img-fluid" src="/projects/images/remember_soje/soje_portrait.JPG" alt="Soje portrait">
+                    <p class="caption">Portrait from 'Soje atelier' which is an old Bed & Breakfast from Japanese
+                        colonial
+                        time,
+                        located at Soje.</p>
+                </div>
+                <div class="col">
+
+
                     <img class="img-fluid" src="/projects/images/remember_soje/soje_social_2.jpg" alt="Soje social 2">
                     <p class="caption">Start-up company "Watch There" which provided wireles headphones for the
                         event.</p>
+
+
                 </div>
-                <div class="row">
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img class="img-fluid" src="/projects/images/remember_soje/soje_social_1.jpg" alt="Soje social 1">
+                    <p class="caption">Poster and Instagram post of the event.</p>
+                </div>
+                <div class="col">
                     <img class="img-fluid" src="/projects/images/remember_soje/soje_social_3.jpg" alt="Soje social 3">
                     <p class="caption">SNS review of the event from a participant.</p>
                 </div>
             </div>
         </div>
+    </div>
+
+
+    <!-- 
+    # ==========================================================================
+        Modal: enlarge image
+    # ==========================================================================    
+    -->
+
+    <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <!-- <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div> -->
+                <div class="modal-body">
+                    <img src="" class="imagepreview img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- 
+    # ==========================================================================
+        Scripts
+    # ==========================================================================    
+     -->
+
+    <!-- Javascript for header and lighslider-->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!-- Script for header -->
+    <script>
+        $(function () {
+            $("#header").load("../header.html");
+            // $("#footer").load("footer.html");
+        }); 
+    </script>
+
+    <!-- Script for enlarged image -->
+    <script>
+        $(function () {
+            $('.pop').on('click', function () {
+                $('.imagepreview').attr('src', $(this).find('img').attr('src'));
+                $('#imagemodal').modal('show');
+            });
+        });
+    </script>
+
+    <!-- Script for lightslider -->
+    <script src="../lightslider.js"></script>
+
+    <!-- Nostalgia fantasia -->
+    <script type="text/javascript">
+        $('#lightSlider-soje').lightSlider({
+            item: 4,
+            slideMove: 1,
+            loop: false,
+            pager: true
+        });
+    </script>
 </body>
