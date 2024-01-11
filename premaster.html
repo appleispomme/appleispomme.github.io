@@ -16,6 +16,16 @@
             // $("#footer").load("footer.html");
         }); 
     </script>
+
+    <!-- Script for enlarged image -->
+    <script>
+        $(function () {
+            $('.pop').on('click', function () {
+                $('.imagepreview').attr('src', $(this).find('img').attr('src'));
+                $('#imagemodal').modal('show');
+            });
+        });
+    </script>
 </head>
 
 
@@ -27,7 +37,7 @@
     <div class="container last-container">
         <!-- Text -->
         <div class="row">
-            <div class="slide-up" style="height: 6em;">
+            <div class="slide-up" style="height: 10em;">
                 <div class=" inner">
                     <h1 class="page-title">DAE pre-master</h1>
                     <!-- <h2 class="page-subtitle">Subtitle?</h2> -->
@@ -37,11 +47,10 @@
 
         <!-- Content -->
         <div class="row">
-            <div class="col">
+            <div class="col-lg ps-lg-1 pe-lg-2">
                 <img class="img-fluid" src="/images/premaster/premaster_installation.gif" style="width: 100%;">
-
             </div>
-            <div class="col">
+            <div class="col-lg px-1 ps-lg-2 pe-lg-1 pt-5 pt-lg-0">
                 <p>
                     Since XXX, I started the pre-master programme at Design Academy Eindhoven (DAE).
                     Through the course, I was able to learn DAE's tone and manner.
@@ -96,6 +105,50 @@
                     A form of meditation as I went through the most stressful period of my life.
                     Paradoxically, by presenting these habits in my Zen garden, I aim to melt away the tension.
                 </p>
+            </div>
+        </div>
+
+        <div class="row pt-3">
+            <div class="col-6 col-sm-3 px-md-1">
+                <a href="#responsive" class="pop">
+                    <img class="img-fluid" src="/images/premaster/IMG_0431.jpg">
+                </a>
+            </div>
+            <div class="col-6 col-sm-3 px-md-1">
+                <a href="#responsive" class="pop">
+                    <img class="img-fluid" src="/images/premaster/IMG_0432.jpg">
+                </a>
+            </div>
+            <div class="col-6 col-sm-3 px-md-1">
+                <a href="#responsive" class="pop">
+                    <img class="img-fluid" src="/images/premaster/IMG_8722.jpg">
+                </a>
+            </div>
+            <div class="col-6 col-sm-3 px-md-1">
+                <a href="#responsive" class="pop">
+                    <img class="img-fluid" src="/images/premaster/IMG_8737.jpg">
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 
+    # ==========================================================================
+        Modal: enlarge image
+    # ==========================================================================    
+    -->
+
+    <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <!-- <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div> -->
+                <div class="modal-body">
+                    <img src="" class="imagepreview img-fluid">
+                </div>
             </div>
         </div>
     </div>
