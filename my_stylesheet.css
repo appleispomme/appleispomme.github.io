@@ -91,6 +91,34 @@ p {
 
 /*
 # ==============================================================================
+# Enlarge images when clicking on it
+# ==============================================================================
+*/
+
+#imagemodal .modal-dialog {
+  max-width: 90vw;   /* let the dialog itself grow */
+  width: auto;
+}
+
+#imagemodal .modal-content {
+  width: fit-content;
+  margin: 0 auto;
+  background: transparent;
+  border: none;
+}
+
+#imagemodal .imagepreview {
+  max-width: 80vw;
+  max-height: 80vh;
+  width: auto;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+
+/*
+# ==============================================================================
 # Flip animation for projects/career pages
 # ==============================================================================
 */

@@ -19,10 +19,23 @@
 
     <!-- Script for enlarged image -->
     <script>
+        // $(function () {
+        //     $('.pop').on('click', function () {
+        //         $('.imagepreview').attr('src', $(this).find('img').attr('src'));
+        //         $('#imagemodal').modal('show');
+        //     });
+        // });
         $(function () {
-            $('.pop').on('click', function () {
+            $(document).on('click', '.pop', function (e) {
+                e.preventDefault();
+
+                var modalEl = document.getElementById('imagemodal');
+                if (!modalEl || typeof bootstrap === 'undefined') return;
+
                 $('.imagepreview').attr('src', $(this).find('img').attr('src'));
-                $('#imagemodal').modal('show');
+
+                var imageModal = bootstrap.Modal.getOrCreateInstance(modalEl);
+                imageModal.show();
             });
         });
     </script>
