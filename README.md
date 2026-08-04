@@ -2,6 +2,10 @@
 
 This is a prototype for a static portfolio website.
 
+# How-to serve locally
+
+In VS Code, `Go Live` (bottom right).
+
 # To-do
 
 ## High prio

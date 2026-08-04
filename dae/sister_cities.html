@@ -35,19 +35,21 @@
             </div>
         </div>
 
-        <!-- <div class="row tldr">
+        <div class="row tldr">
             <p>
                 The assignment aimed to explore a random keyword (prompt) selected from an archive provided during class, and expand it into a broader narrative. 
                 My chosen prompt was “apple.” 
                 I unfolded the layers behind this word, moving beyond the idea of a simple fruit, and delved into the multiple stories, meanings, and contexts embedded within it.
             </p>
-        </div> -->
+        </div>
 
 
         <!-- <div class="row " style="aspect-ratio: 16/9;"> -->
-        <div class="row">
-            <div id="unity-container" class="unity-desktop">
-                <canvas id="unity-canvas" width=800 height=450 tabindex="-1"></canvas>
+        <div class="row" >
+            <div id="unity-container" class="unity-desktop" style="display: block; margin: 0 auto; width: 100%;">
+                <!-- <canvas id="unity-canvas" width=800 height=450 tabindex="-1"></canvas> -->
+                 <canvas id="unity-canvas" style="aspect-ratio: 16/9;" tabindex="-1"></canvas>
+                <!-- <canvas id="unity-canvas"  tabindex="-1"></canvas> -->
                 <div id="unity-loading-bar">
                     <div id="unity-logo"></div>
                     <div id="unity-progress-bar-empty">
@@ -58,7 +60,7 @@
                 <div id="unity-footer">
                     <div id="unity-webgl-logo"></div>
                     <div id="unity-fullscreen-button"></div>
-                    <div id="unity-build-title">My project</div>
+                    <div id="unity-build-title">Sister cities</div>
                 </div>
             </div>
         </div>
@@ -145,9 +147,12 @@
 
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
-
-        canvas.style.width = "800px";
-        canvas.style.height = "450px";
+        canvas.style.width = "100%";
+        // canvas.style.maxWidth = "800px"; // optional: don't upscale past original size
+        canvas.style.aspectRatio = "800 / 450";
+        canvas.style.height = "auto";
+        // canvas.style.width = "800px";
+        // canvas.style.height = "450px";
       }
 
       loadingBar.style.display = "block";
