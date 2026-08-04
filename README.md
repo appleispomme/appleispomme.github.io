@@ -6,6 +6,9 @@ This is a prototype for a static portfolio website.
 
 In VS Code, `Go Live` (bottom right).
 
+In ruby command:
+`bundle exec jekyll serve --livereload`
+
 # To-do
 
 ## High prio
